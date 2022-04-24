@@ -6,7 +6,7 @@ on:
 name: Build Jekyll Site
 
 jobs:
-  jekyll-latest:
+  build_docs:
     name: Build Jekyll site (latest)
     runs-on: ubuntu-latest
     steps:
