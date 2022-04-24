@@ -1,0 +1,17 @@
+I"š<h1 class="fs-9" id="molecular-dna">Molecular DNA</h1>
+
+<p class="fs-6 fw-300">Radiation-induced DNA damage simulations in Geant4.</p>
+
+<p>Molecular DNA is a Geant4-DNA program built to allow easy simulation of
+radiation-induced DNA damage with <em>flexible geometries</em> and well defined
+<em>damage parameters</em>.</p>
+
+<p>Get started right away using our <em>docker container</em> and a <em>library of pre-existing geometries</em>,
+or dive into the documentation.</p>
+
+<p><a href="https://natl.github.io/docs/source.html" class="btn btn-purple">Get Started from Source</a>
+<a href="https://natl.github.io/docs/publications.html" class="btn btn-blue">See Publications</a>
+<a href="https://natl.github.io/docs/geometries.html" class="btn btn-green">Explore Geometries</a></p>
+
+<p>Want to know more about how it all works? Youâ€™ll want to visit our <a href="https://natl.github.io/docs/overview">Overview</a> page.</p>
+:ET
