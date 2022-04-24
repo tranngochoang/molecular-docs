@@ -10,11 +10,16 @@ jobs:
     name: Build Jekyll site (latest)
     runs-on: ubuntu-latest
     steps:
-
     - uses: actions/checkout@master
-
     - name: Build the site in the jekyll/builder container
       run: |
         docker run --rm \
         --volume="${{ github.workspace }}:/srv/jekyll" \
         jekyll/builder:latest /bin/bash -c "gem install bundler && chmod -R 777 /srv/jekyll && bundle install && bundle exec jekyll build && bundle exec rake search:init"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: gh-pages
+        directory: _site
+        github_token: ${{ secrets.GITHUB_TOKEN }}
