@@ -1,5 +1,335 @@
 ---
   permalink: /assets/js/search-data.json
   ---
-  {
+  {"0": {
+      "doc": "Bacterial Cell",
+      "title": "Bacterial Cell",
+      "content": " ",
+      "url": "/molecular-docs/docs/examples/bacterial-cell",
+      "relUrl": "/docs/examples/bacterial-cell"
+    },"1": {
+      "doc": "Chemistry Model",
+      "title": "Configuration",
+      "content": "Just the Docs has some specific configuration parameters that can be defined in your Jekyll site’s _config.yml file. ",
+      "url": "/molecular-docs/docs/overview/chemistry-model.html#configuration",
+      "relUrl": "/docs/overview/chemistry-model.html#configuration"
+    },"2": {
+      "doc": "Chemistry Model",
+      "title": "Chemistry Model",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/chemistry-model.html",
+      "relUrl": "/docs/overview/chemistry-model.html"
+    },"3": {
+      "doc": "Configuration Glossary",
+      "title": "Configuration",
+      "content": "The custom Geant4 commands available in the Molecular DNA application are listed here. ",
+      "url": "/molecular-docs/docs/overview/configuration#configuration",
+      "relUrl": "/docs/overview/configuration#configuration"
+    },"4": {
+      "doc": "Configuration Glossary",
+      "title": "Table of contents",
+      "content": ". | /analysisDNA | /cell | /dnageom | /world | . ",
+      "url": "/molecular-docs/docs/overview/configuration#table-of-contents",
+      "relUrl": "/docs/overview/configuration#table-of-contents"
+    },"5": {
+      "doc": "Configuration Glossary",
+      "title": "/analysisDNA",
+      "content": "| command | description | parameters | . | analysisDNA/saveStrands | Bool to set whether strands ought be saved use /analysisDNA/strandDir to set location | . | (bool, Default: Not Set, Omittable: False) | . | . | analysisDNA/strandDir | Directory to save DNA damage fragments | . | DNA fragments (str, Default: Not Set, Omittable: False) | . | . | analysisDNA/fragmentGap | Gap between DNA fragments in base pairs. Set to zero to score placement volumes independently | . | Base Pair gap (int, Default: Not Set, Omittable: False) | . | . | analysisDNA/diagnosticChain | Save the position of hits histos only on one chain | . | Chain Index (int, Default: Not Set, Omittable: True) | . | . | analysisDNA/dsbDistance | Max separation of DSBs. Must be less than 31. | . | Max. DSB distance. (int, Default: Not Set, Omittable: False) | . | . | analysisDNA/testClassifier | Run unit test for break classification | | . | analysisDNA/fileName | ROOT output file name | . | ROOT output file name (str, Default: Not Set, Omittable: False) | . | . ",
+      "url": "/molecular-docs/docs/overview/configuration#analysisdna",
+      "relUrl": "/docs/overview/configuration#analysisdna"
+    },"6": {
+      "doc": "Configuration Glossary",
+      "title": "/cell",
+      "content": "| command | description | parameters | . | cell/radiusSize | Set semi-major axes for cell (x, y, z) - unset, whole world is water | . | xradius (double, Default: Not Set, Omittable: False) | yradius (double, Default: Not Set, Omittable: False) | zradius (double, Default: Not Set, Omittable: False) | Unit (str, Default: Not Set, Omittable: False) | . | . ",
+      "url": "/molecular-docs/docs/overview/configuration#cell",
+      "relUrl": "/docs/overview/configuration#cell"
+    },"7": {
+      "doc": "Configuration Glossary",
+      "title": "/dnageom",
+      "content": "| command | description | parameters | . | dnageom/placementVolume | Set a placement volume format: name path | . | name path (str, Default: Not Set, Omittable: False) | . | . | dnageom/definitionFile | Path to file that defines placement locations | . | path (str, Default: Not Set, Omittable: False) | . | . | dnageom/placementSize | Side length for each placement (x, y, z) | . | xlength (double, Default: Not Set, Omittable: False) | ylength (double, Default: Not Set, Omittable: False) | zlength (double, Default: Not Set, Omittable: False) | Unit (str, Default: Not Set, Omittable: False) | . | . | dnageom/fractalScaling | Scaling of XYZ in fractal definition file | . | xlength (double, Default: Not Set, Omittable: False) | ylength (double, Default: Not Set, Omittable: False) | zlength (double, Default: Not Set, Omittable: False) | Unit (str, Default: Not Set, Omittable: False) | . | . | dnageom/checkOverlaps | Check overlaps in DNA geometry region | . | true/false check overlaps (bool, Default: Not Set, Omittable: False) | . | . | dnageom/verbose | Verbosity for DNA geometry | . | int verbose level (int, Default: Not Set, Omittable: False) | . | . | dnageom/setSmartVoxels | Optimisation value (int) for smart voxels The G4 default is 2 | . | Optimasation value (int, Default: Not Set, Omittable: False) | . | . | dnageom/interactionDirectRange | Critical range to start recording SSBs from direct effects | . | Range (double, Default: Not Set, Omittable: False) | Unit (str, Default: Not Set, Omittable: False) | . | . | dnageom/radicalKillDistance | Distance from base pairs at which to kill radicals | . | Range (double, Default: Not Set, Omittable: False) | Unit (str, Default: Not Set, Omittable: False) | . | . | dnageom/activateHistoneScavenging | Activate Histone scavenging function | . | true/false Histone function (bool, Default: Not Set, Omittable: False) | . | . | dnageom/drawCellVolumes | Draw cell/chromosome volumes rather than DNA (makes DNA invisible) | . | true/false draw cell volumes (bool, Default: Not Set, Omittable: False) | . | . ",
+      "url": "/molecular-docs/docs/overview/configuration#dnageom",
+      "relUrl": "/docs/overview/configuration#dnageom"
+    },"8": {
+      "doc": "Configuration Glossary",
+      "title": "/world",
+      "content": "| command | description | parameters | . | world/worldSize | Side length for the world | . | Side length (double, Default: Not Set, Omittable: False) | Unit (str, Default: Not Set, Omittable: False) | . | . ",
+      "url": "/molecular-docs/docs/overview/configuration#world",
+      "relUrl": "/docs/overview/configuration#world"
+    },"9": {
+      "doc": "Configuration Glossary",
+      "title": "Configuration Glossary",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/configuration",
+      "relUrl": "/docs/overview/configuration"
+    },"10": {
+      "doc": "Damage Model",
+      "title": "Damage Model",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/damage-model#damage-model",
+      "relUrl": "/docs/overview/damage-model#damage-model"
+    },"11": {
+      "doc": "Damage Model",
+      "title": "Table of contents",
+      "content": ". | Direct Damage | Indirect Damage | Radical Scavenging | . ",
+      "url": "/molecular-docs/docs/overview/damage-model#table-of-contents",
+      "relUrl": "/docs/overview/damage-model#table-of-contents"
+    },"12": {
+      "doc": "Damage Model",
+      "title": "Direct Damage",
+      "content": "Direct Damage occurs when energy from physical processes is deposited near a DNA molecule. In Molecular DNA, we associate damage either with a ‘strand’ molecule (sugar or phosphate placement) or a base molecule. The maximum distance from the centre of a molecule which can result in any energy deposition tied to that model is called the direct interaction range and can be set using dnageom/interactionDirectRange. To assign damage, the program looks up all molecules with the direct interation range of a given energy deposition and assigns the damage to the closest molecule. In the literature direct strand break damage models typically take the sum of the energy depositions in the sugar-phosphate part of the DNA strand and calculate the chance of a break based on the energy deposition. We simulate this using the /dnadamage/directDamageLower and /dnadamage/directDamageUpper commands. Essentially: . | Energy Deposition below directDamageLower never causes a break | Energy Deposition above directDamageUpper always causes a break | Between these bounds, the likelihood of a break rises uniformly | . The likelihood of a break, for a lower bound of 5eV and an upper bound of 37.5eV is shown below . Some models assume a step likelihood function for physical damage. This can be modelled by setting /dnadamage/directDamageLower and /dnadamage/directDamageUpper to the same value. ",
+      "url": "/molecular-docs/docs/overview/damage-model#direct-damage",
+      "relUrl": "/docs/overview/damage-model#direct-damage"
+    },"13": {
+      "doc": "Damage Model",
+      "title": "Indirect Damage",
+      "content": "Indirect Damage is scored when a chemical reaction leads to a strand break. The chemical reactions between radicals and DNA elements themselves are defined in the Chemistry Model through the MolecularChemistryList class. The phosphate part of the sugar-phosphate backbone rarely takes part in reactions (reactions between radicals and phosphate are not even defined in the simulation), so the main factors in the indirect damage model are the likelihoods that a reaction between a radical and the DNA backbone lead to a single strand break (SSB). Each probablity is defined through the macro interface as below . | Reaction | Macro Command | . | \\(Pr(\\ce{e^{-}_{aq}} + \\mathrm{Sugar} \\rightarrow \\mathrm{SSB})\\) | /dnadamage/indirectEaqStrandChance | . | \\(Pr(H^{\\bullet} + \\mathrm{Sugar} \\rightarrow \\mathrm{SSB})\\) | /dnadamage/indirectHStrandChance | . | \\(Pr(\\ce{^{\\bullet}OH} + \\mathrm{Sugar} \\rightarrow \\mathrm{SSB})\\) | /dnadamage/indirectOHStrandChance | . Base Damage is modelled through a similar interface, though two steps are provided for the modelling of both base damage generally, and also strand break induction (while this might seem redundant, it was coded for a level of flexibility). For a given base, we can consider seperately the likelihood that the chemical reaction between the base and the radical causes damage to the base pair, and the likelihood it causes a strand break. In the case of \\(\\ce{^{\\bullet}OH}\\) /dnadamage/indirectOHBaseChance 0.5 would set the likelihood that the simulation should consider a reaction between \\(\\ce{^{\\bullet}OH}\\) and a base as damage as 50%. If base damage does occur, /dnadamage/inductionOHChance 0.4 would mean that following base damage, the chance of that damage causing an SSB is 40%. Note that these are dependent events, so the likelihood of the reaction causing an SSB is 20%. For most work, you would probably consider all chemical reactions with a base as base damage, but assume these don’t lead to SSBs. This requires the following settings for all radicals: . /dnadamage/indirectOHBaseChance 1.0 /dnadamage/inductionOHChance 0.00 . ",
+      "url": "/molecular-docs/docs/overview/damage-model#indirect-damage",
+      "relUrl": "/docs/overview/damage-model#indirect-damage"
+    },"14": {
+      "doc": "Damage Model",
+      "title": "Radical Scavenging",
+      "content": "One of the most important parameters in the simulation is /dnageom/radicalKillDistance which specifies the spatial region in which we calculate chemistry. This parameter is complimentary with what other simulations would model as scavenging or an early simulation cut-off time, in that it is linked to the distance a radical is expected to diffuse before the simulation ends. In particular, for a radical with a diffusion constant \\(D_c\\), we expect it to diffuse a distance \\(\\bar{x}\\) in time \\(t\\) as follows: . \\[\\bar{x} = \\sqrt{6D_ct}\\] For the \\(\\ce{^{\\bullet}OH}\\) radical (\\(D_c=2.8\\times 10^{-9}m^2s^{-1}\\)), this gives \\(\\bar{x} = 4.09 \\sqrt{t} \\ \\mathrm{nm}\\). Typically for simulations in Molecular DNA, this means that a radical kill distance of 4nm-6nm yields reliable results, while larger radical kill distances would require scavenging to be more broadly implemented. ",
+      "url": "/molecular-docs/docs/overview/damage-model#radical-scavenging",
+      "relUrl": "/docs/overview/damage-model#radical-scavenging"
+    },"15": {
+      "doc": "Damage Model",
+      "title": "Damage Model",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/damage-model",
+      "relUrl": "/docs/overview/damage-model"
+    },"16": {
+      "doc": "DNA Placements",
+      "title": "DNA Placements",
+      "content": " ",
+      "url": "/molecular-docs/docs/geometry-library/dna-placements",
+      "relUrl": "/docs/geometry-library/dna-placements"
+    },"17": {
+      "doc": "Examples",
+      "title": "Examples",
+      "content": " ",
+      "url": "/molecular-docs/docs/examples",
+      "relUrl": "/docs/examples"
+    },"18": {
+      "doc": "Fractal DNA Package",
+      "title": "Fractal DNA Package",
+      "content": "Coming Soon - how to make your own geometry! . ",
+      "url": "/molecular-docs/docs/geometry-library/fractal-dna",
+      "relUrl": "/docs/geometry-library/fractal-dna"
+    },"19": {
+      "doc": "Geometry Library",
+      "title": "Geometry Library",
+      "content": "Here you’ll find geometries that can be used with the Molecular DNA package. If you want to make new geometries, you can start with the FractalDNA tools which are accessible on Github, or read about our Geometry Model. ",
+      "url": "/molecular-docs/docs/geometry-library",
+      "relUrl": "/docs/geometry-library"
+    },"20": {
+      "doc": "Geometry Model",
+      "title": "Geometry Model",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/geometry-model",
+      "relUrl": "/docs/overview/geometry-model"
+    },"21": {
+      "doc": "Geometry Model",
+      "title": "Table of contents",
+      "content": ". | Design Principal | DNA Placements . | Specifying Molecule Sizes | Adding multiple chains | Defining DNA Placements | Considerations for Base Pairs | . | Geometry Placements | Physics and Chemistry Considerations . | Physics Cross Sections | Parallel Worlds for Physics and Chemistry | . | . ",
+      "url": "/molecular-docs/docs/overview/geometry-model#table-of-contents",
+      "relUrl": "/docs/overview/geometry-model#table-of-contents"
+    },"22": {
+      "doc": "Geometry Model",
+      "title": "Design Principal",
+      "content": "Molecular DNA was made to make it easy to define a DNA geometry, and then place it repeatedly to model a complex geometry at large scales, as below. There are two important notions when we define the geometry, placement definitions and the geometry defintion, often called the fractal definition as it is often seeded with a fractal. | Placement Definition defines the small scale structure of the simulation. | Geometry Definition defines the large scale structure of the simulation. | . Some examples of how to make these files are available on Github, and examples can be downloaded from the Geometry Library . ",
+      "url": "/molecular-docs/docs/overview/geometry-model#design-principal",
+      "relUrl": "/docs/overview/geometry-model#design-principal"
+    },"23": {
+      "doc": "Geometry Model",
+      "title": "DNA Placements",
+      "content": "DNA Placements are the low level building block of the DNA geometry and show how the DNA sits in a given prism. A simple example of this is below, containing 14 base pairs (grey), alongside the sugar (red) and phosphate (yellow) molecules in the chain. These files are specified as either 11 or 14 column ASCII text files with the schema below: . | MOLECULE_NAME - Name of the molecule | SHAPE Optional - Shape of the molecule (Sphere or Ellipse) | CHAIN_ID - Index for the chain | STRAND_ID - Index for the strand (either left or right side of the DNA molecule) | BP_INDEX - Index of the base pair in the volume (per chain) | SIZE_X Optional - semi-major x axis of ellipse (Å) | SIZE_Y Optional - semi-major y axis of ellipse (Å) | SIZE_Z Optional - semi-major z axis of ellipse (Å) | POS_X - x position in volume (Å) | POS_Y - y position in volume (Å) | POS_Z - z position in volume (Å) | ROT_X - rotation around the X-axis | ROT_Y - rotation around the Y-axis | ROT_Z - Rotation around the Z-axis | . Distances are specified in Angstrom, while angles are specified in radians (and correspond to the three Euler angles). Specifying Molecule Sizes . The molecule size columns are optional, as they can either fall back onto the default sizes or be set to custom sizes in the macro definition via: . /dnageom/useCustomMoleculeSizes /dnageom/moleculeSize name x y z units . Note that molecule name matches are case insensitive. The default molecule names and sizes are: . | Molecule Name | X semi-major axis (Å) | Y semi-major axis (Å) | Z semi-major axis (Å) | . | phosphate | 2.282354 | 2.282354 | 2.282354 | . | sugar | 2.632140 | 2.632140 | 2.632140 | . | guanine | 3.631503 | 3.799953 | 1.887288 | . | cytosine | 3.597341 | 3.066331 | 1.779361 | . | adenine | 3.430711 | 3.743504 | 1.931958 | . | thymine | 4.205943 | 3.040448 | 2.003359 | . | histone | 25 | 25 | 25 | . Adding multiple chains . A simple way to increase the density of DNA in simulations is to place multiple chains of DNA in each placement volume. Multiple ‘chains’ can be placed in the one placement volume as shown below, provide that they each have a different chain_id in the data file. Here, we show graphically what a 1-chain and 4-chain placement volume could look like. The simulation platform supports 1, 4 and 8 chains. It will join chains together correctly even when placement volumes are rotated along the lines of the image shown below. Defining DNA Placements . Placement files should be defined with either of the following two (space seperated) schemas: . Specifying Size for every molecule . NAME SHAPE CHAIN_ID STRAND_ID BP_INDEX SIZE_X SIZE_Y SIZE_Z POS_X POS_Y POS_Z ROT_X ROT_Y ROT_Z . Not specifying size for every molecule . NAME CHAIN_ID STRAND_ID BP_INDEX POS_X POS_Y POS_Z ROT_X ROT_Y ROT_Z . Spatial units are angstroms, angles are in radians. Molecule names cannot contain spaces. The program assumes that the file is ordered first by base pair, then strand, then chain as below, keeping the order Phosphate, Sugar then Base. Histones when specified can be placed anywhere in the file however (they are often at the start or end). NAME ... CHAIN_ID STRAND_ID BP_INDEX Phosphate 0 0 0 Sugar 0 0 0 Base 0 0 0 Phosphate 0 1 0 Sugar 0 1 0 Base 0 1 0 Phosphate 0 0 1 Sugar 0 0 1 Base 0 0 1 Phosphate 0 1 1 Sugar 0 1 1 Base 0 1 1 Phosphate 0 0 2 Sugar 0 0 2 Base 0 0 2 Phosphate 0 1 2 Sugar 0 1 2 Base 0 1 2 Phosphate 1 0 1 Sugar 1 0 1 Base 1 0 1 . The order Phosphate - Sugar - Base must always be kept. Each chain is specified completely before a new chain starts, and base pair sections are specified in their entirety before a new base pair section is specified. This is done to enable the file to be read in such that their is a fixed distance between any molecule and its neighbours. This facilitates the cutting of certain shapes within Geant4 so that each shape can be represented with the maximum volume possible. The program will assume the neighbouring molecules for a given sugar, phosphate or base are: . | Base Pair, strand ID 0: Sugar at :-1, base at :+3, base at :-6 | Base Pair, strand ID 1: Sugar at :-1, base at :-3, base at :-6 | Sugar: Phosphate at L-1 | Phosphate: Sugar at L+5 | . Once defined, a placement volume can be loaded using the following command: . /dnageom/placementVolume name path twist . For example: . /dnageom/placementVolume turntwist geometries/turned_twisted_solenoid_750.txt true . Considerations for Base Pairs . When building the geometry, you’ll probably consider a base pair in an unrotated space and then rotate the base pair to produce the chain you desire, as well as the standard double helix. Our geometries have been built and tested with the primary axis of the double helix in a straight DNA segment being the Z-axis. Similarly, a base pair on its own is built so that its height (the 3.4Å-long axis) is the Z-axis. We rely on this assumption to know that, in a frame of reference prior to any rotation, a base pair should be roughly 3.4Å in height. This assumption is used to help stop molecule placements intersecting each other. If you are developing geometries alongside the Python package FractalDNA, these changes should be done automatically. ",
+      "url": "/molecular-docs/docs/overview/geometry-model#dna-placements",
+      "relUrl": "/docs/overview/geometry-model#dna-placements"
+    },"24": {
+      "doc": "Geometry Model",
+      "title": "Geometry Placements",
+      "content": "The Geometry Definition files describe how the DNA placements should be put into the simulation world. Often it will define tesselating cubes that join DNA together in a snake-like pattern, though it can also be used to place non-connected DNA elements (e.g. this parameter study). Three control parameters are useful when placing the geometry: . | /analysisDNA/fragmentGap 0 will treat all placements as seperate, preventing any joining between strands. | /dnageom/setVoxelPlacementAnglesAsMultiplesOfPi will load the Euler angles for placement volumes as multiples of pi. | /dnageom/fractalScaling X Y Z nm will scale the distances in the geometry file by the values specified. | e.g. /dnageom/fractalScaling 1 1 1 nm will mean that the geometry file is in units of nm. | . | . The schema for the geometry placement files is as follows, with rotations being the Euler angles. | IDX - placement index | KIND - placement name (should correspond to a DNA volume definition) | POS_X - X position (mm if not scaled) | POS_Y - Y position (mm if not scaled) | POS_Z - Z position (mm if not scaled) | EUL_PSI - placement rotation (psi) | EUL_THETA - placement rotation (theta) | EUL_PHI - placement rotation (phi) | . An example file might look like this. #IDX KIND POS_X POS_Y POS_Z EUL_PSI EUL_THETA EUL_PHI 0 straight 0.0 0.0 0.0 0.0 -0.0 0.0 1 turn 0.0 0.0 1.0 0.0 -0.0 1.57079632679 2 turn 0.0 1.0 1.0 -1.57079632679 1.57079632679 0 3 turntwist -0.0 1.0 0.0 3.14159265359 -0.0 0.0 4 turn 1.0 1.0 -0.0 -3.14159265359 -1.57079632679 0 5 turntwist 1.0 1.0 1.0 0.0 -0.0 -1.57079632679 6 turn 1.0 0.0 1.0 1.57079632679 1.57079632679 0 7 straight 1.0 0.0 -0.0 3.14159265359 -0.0 0.0 . And could be loaded like this: . /dnageom/definitionFile /path/to/definition.txt # or another path /dnageom/fractalScaling 50 50 50 nm # scale each unit to 50 nm blocks . ",
+      "url": "/molecular-docs/docs/overview/geometry-model#geometry-placements",
+      "relUrl": "/docs/overview/geometry-model#geometry-placements"
+    },"25": {
+      "doc": "Geometry Model",
+      "title": "Physics and Chemistry Considerations",
+      "content": "Molecular DNA is a means of allowing geometries to interact with the physics and chemistry of Geant4 in a reliable way for DNA damage. Most of this is done through the damage model, but there are some implementation details in the geometry model. Physics Cross Sections . Inside each molecule in DNA’s volume, we use the cross sections for that material rather than the cross section of water. Sometimes we shrink/cut these molecules in order to place them, which has an impact on the volume of the simulation which uses their cross-section, as below, where the red sugar and yellow phosphate molecules are cut so as not to overlap. This has a very minimal impact on the actual physics of the simulation as the regions occupied by DNA are so small compared to the water region. Parallel Worlds for Physics and Chemistry . In the implementation, the physics geometry is implemented in a parallel world, while the chemistry executes in the primary Geant4 world which contains only water. This means the chemistry itself never needs to react with a DNA Geant4 geometry, as the DNA geometry is in the parallel world. Instead the chemistry interacts with the DNA geometry via a seperate memory structure associated with the mother placement volume. ",
+      "url": "/molecular-docs/docs/overview/geometry-model#physics-and-chemistry-considerations",
+      "relUrl": "/docs/overview/geometry-model#physics-and-chemistry-considerations"
+    },"26": {
+      "doc": "Geometry Placements",
+      "title": "Geometry Placements",
+      "content": " ",
+      "url": "/molecular-docs/docs/geometry-library/geometry-placements",
+      "relUrl": "/docs/geometry-library/geometry-placements"
+    },"27": {
+      "doc": "Human Cell",
+      "title": "Human Cell",
+      "content": " ",
+      "url": "/molecular-docs/docs/examples/human-cell",
+      "relUrl": "/docs/examples/human-cell"
+    },"28": {
+      "doc": "Home",
+      "title": "Molecular DNA",
+      "content": "Radiation-induced DNA damage simulations in Geant4. Molecular DNA is a Geant4-DNA program built to allow easy simulation of radiation-induced DNA damage with flexible geometries and well defined damage parameters. Get started right away using our docker container and a library of pre-existing geometries, or dive into the documentation. Get Started from Source See Publications Explore Geometries . Want to know more about how it all works? You’ll want to visit our Overview page. ",
+      "url": "/molecular-docs/#molecular-dna",
+      "relUrl": "/#molecular-dna"
+    },"29": {
+      "doc": "Home",
+      "title": "Home",
+      "content": " ",
+      "url": "/molecular-docs/",
+      "relUrl": "/"
+    },"30": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Molecular DNA Macro Files",
+      "content": "Macro files define simulations in Geant4. Molecular DNA contains a number of additional commands that allow DNA damage simulations to take place. The full list of commands is written in Configuration. ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy",
+      "relUrl": "/docs/overview/macro-anatomy"
+    },"31": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Table of contents",
+      "content": ". | A Basic Macro File | Set up the world | Set Up the Geometry | Define the Chromosomes | Set up the Damage Model | Set up the beam | Set up analysis rules | Run the simulation | . ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#table-of-contents",
+      "relUrl": "/docs/overview/macro-anatomy#table-of-contents"
+    },"32": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "A Basic Macro File",
+      "content": "Let’s start with a basic macro file: . # First off, we set the size of the world /world/worldSize 3 um # Next we define the geometry /dnageom/placementSize 50 50 50 nm /dnageom/placementVolume turn geometries/1strand_50nm_turn.txt /dnageom/placementVolume turntwist geometries/1strand_50nm_turn.txt true /dnageom/placementVolume straight geometries/1strand_50nm_straight.txt /dnageom/fractalScaling 50 50 50 nm /dnageom/definitionFile geometries/hilbert1.txt # We define our \"chromosomes\" /chromosome/add cell sphere 200 0 0 0 nm # Geometry related damage parameters /dnageom/radicalKillDistance 4 nm /dnageom/interactionDirectRange 6 angstrom # We define the damage model /dnadamage/directDamageLower 17.5 eV /dnadamage/directDamageUpper 17.5 eV /dnadamage/indirectOHBaseChance 1.0 /dnadamage/indirectOHStrandChance 0.4 /dnadamage/inductionOHChance 0.00 /dnadamage/indirectHBaseChance 1.0 /dnadamage/indirectHStrandChance 0.4 /dnadamage/inductionHChance 0.00 /dnadamage/indirectEaqBaseChance 1.0 /dnadamage/indirectEaqStrandChance 0.4 /dnadamage/inductionEaqChance 0.00 # And then we initialize our run /run/initialize # The General Particle Source is used to define a beam /gps/particle proton /gps/ang/type iso /gps/energy 100 keV /gps/pos/type Point /gps/pos/centre 51 51 51 nm # Set any analysis parameters /analysisDNA/fileName my_file.root # And the simulation can run! /run/beamOn 1 . That’s a lot to digest. But we can break down the macro file into a few components: . | Set up the world | Define the geometry | Define the regions of interest (chromosomes) | Define the damage model | Set up the beam | Set any analysis rules | Run the simulation! | . ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#a-basic-macro-file",
+      "relUrl": "/docs/overview/macro-anatomy#a-basic-macro-file"
+    },"33": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Set up the world",
+      "content": "The first command to run is to set the size of the world. The simulation runs in a square world and you can set the side length as below: . /world/worldSize 3 um . The world is entirely made of water unless you also specify a cell (by its semi-major axes). /cell/radiusSize 1 1 0.5 um . Cells modify the default behavoiur by placing a water containing cell into a vacuum-filled world. ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#set-up-the-world",
+      "relUrl": "/docs/overview/macro-anatomy#set-up-the-world"
+    },"34": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Set Up the Geometry",
+      "content": "There are two important notions when we define the geometry, placement definitions and the geometry definition, often called the fractal definition as it is often seeded with a fractal. | Placement Definition defines the small scale structure of the simulation. | Geometry Definition defines the large scale structure of the simulation. | . This is illustrated below, where turned and straight segments are used to build a horse-shoe shape: . So how does all this work? Let’s break down the definitions above: . The first things we define are the sizes of our placement volumes. Here we use 50 nm side length cubes, but these can be rectangular prisms of any shape. /dnageom/placementSize 50 50 50 nm . In this example there are three placement definitions for a straight section, a turned section, and a turned with a 90˚ twist section. /dnageom/placementVolume turn geometries/1strand_50nm_turn.txt /dnageom/placementVolume turntwist geometries/1strand_50nm_turn.txt true /dnageom/placementVolume straight geometries/1strand_50nm_straight.txt . These are referenced by the their names turn, straight and turntwist in the geometry definition file which is loaded as follows: . /dnageom/definitionFile geometries/hilbert1.txt . This particular file handles the space in integer units, so that we can scale them using the command, which allows the definition file to be scaled to the size of the placement volumes we use in this example. /dnageom/fractalScaling 50 50 50 nm . ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#set-up-the-geometry",
+      "relUrl": "/docs/overview/macro-anatomy#set-up-the-geometry"
+    },"35": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Define the Chromosomes",
+      "content": "In Molecular DNA, you can think of chromosomes as regions of interest for analysis. Currently, cylindrical, spherical and elliptical chromosome shapes can be defined, which are mapped onto the placement volumes defined by the large scale geometry. The below image shows, for example how two chromosomes can be defined to yield two regions of interest, overlaid on the grid which defines the overall geometry. Where chromosome regions overlap, energy depositions will be recorded in both. Importantly, the DNA geometry is only placed inside chromosomes. Using this, a square geometry can be coerced to a circular form, by placing a spherical chromosome as we do here: . /chromosome/add cell sphere 200 0 0 0 nm . ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#define-the-chromosomes",
+      "relUrl": "/docs/overview/macro-anatomy#define-the-chromosomes"
+    },"36": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Set up the Damage Model",
+      "content": "A number of parameters are used to determine how DNA damage works in the simulation. The first of these determine how the geometry in particular influences the simulation. /dnageom/radicalKillDistance 4 nm /dnageom/interactionDirectRange 6 angstrom . The Radical Kill Distance tells the simulation to kill all chemistry tracks further than 4nm from the DNA. This parameter is an implicit bound on scavenging. It basically assumes all chemical radicals that need to diffuse 4nm to react with the DNA will be scavenged before they are able to interact chemically with the DNA molecule. The Direct Interaction Range describes to what radius direct (physics-driven) energy depositions should be ascribed to a DNA molecule. Here, only energy depositions with 6Å can contribute a direct strand break. The next part of the damage model handles how direct strand breaks are calculated. The below snippet defines a step function where a cumulative deposition of 17.5eV or more in one event will cause a break. /dnadamage/directDamageLower 17.5 eV /dnadamage/directDamageUpper 17.5 eV . The lower and upper values here describe a broken linear function where: . | Energy Deposition below directDamageLower never causes a break | Energy Deposition above directDamageUpper always causes a break | Between these bounds, the likelihood of a break rises uniformly | . An example of this, for a lower bound of 5eV and an upper bound of 37.5eV is shown below . Next, we define the likelihood of chemical damage occurring for different reactions as below: . /dnadamage/indirectOHBaseChance 1.0 /dnadamage/indirectOHStrandChance 0.4 /dnadamage/inductionOHChance 0.00 . Indirect damage here is what is typically discussed in most papers, it is the likelihood of a chemical reaction occurring between either OH (in this case) and either a base or strand molecule. A lot of research only considers reactions between radicals and strands as leading to strand breaks, and this simulation considers that all reactions between a strand and a radical cause a break. On the other hand, it’s rarely considered that an interaction between a radical and a base can lead to a strand break. If, for whatever reason, you want to model this, you can use the induction chance. This is the probability that base damage leads to a strand break. For most simulations, all that is important are the Radical+Strand break chances, which are set by: . /dnadamage/indirectOHStrandChance 0.4 /dnadamage/indirectHStrandChance 0.4 /dnadamage/indirectEaqStrandChance 0.4 . for the •OH, H+ and eaq radicals respectively. ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#set-up-the-damage-model",
+      "relUrl": "/docs/overview/macro-anatomy#set-up-the-damage-model"
+    },"37": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Set up the beam",
+      "content": "The simulation allows the Geant4 General Particle Source be used to define the beam. You can read the documentation here. The source here defines a 100keV proton point source emitting isotropically. # The General Particle Source is used to define a beam /gps/particle proton /gps/ang/type iso /gps/energy 100 keV /gps/pos/type Point /gps/pos/centre 51 51 51 nm . ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#set-up-the-beam",
+      "relUrl": "/docs/overview/macro-anatomy#set-up-the-beam"
+    },"38": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Set up analysis rules",
+      "content": "The commands under analysisDNA allow the analysis to be modified. Notably, you’ll want to set the output file name: . /analysisDNA/fileName my_file.root . ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#set-up-analysis-rules",
+      "relUrl": "/docs/overview/macro-anatomy#set-up-analysis-rules"
+    },"39": {
+      "doc": "Molecular DNA Macro Files",
+      "title": "Run the simulation",
+      "content": "Particles can be fired using the /run/beamOn command. If you haven’t already run /run/initialize, the initialisation process will also occur here. Be advised that this can take many hours to build a complex DNA geometry due to how the simulation has been designed and the current constraints of Geant4 as it optimises navigation. It is advised that a test on a small geometry is run before moving to a human cell-sized geometry. ",
+      "url": "/molecular-docs/docs/overview/macro-anatomy#run-the-simulation",
+      "relUrl": "/docs/overview/macro-anatomy#run-the-simulation"
+    },"40": {
+      "doc": "Overview",
+      "title": "Molecular DNA Overview",
+      "content": "The Molecular DNA program is designed to allow anyone to simulate early DNA damage using only Geant4 macro commands - No C++ skills needed. The program takes inputs through the form of macro commands which define the geometry, damage model, physics, chemistry and run conditions for the simulation. If you are entirely new to this, the best place to start is looking at the Anatomy of a Macro File. ",
+      "url": "/molecular-docs/docs/overview#molecular-dna-overview",
+      "relUrl": "/docs/overview#molecular-dna-overview"
+    },"41": {
+      "doc": "Overview",
+      "title": "Table of contents",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview#table-of-contents",
+      "relUrl": "/docs/overview#table-of-contents"
+    },"42": {
+      "doc": "Overview",
+      "title": "Overview",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview",
+      "relUrl": "/docs/overview"
+    },"43": {
+      "doc": "Parameter Study",
+      "title": "Parameter Study",
+      "content": " ",
+      "url": "/molecular-docs/docs/examples/parameter-study",
+      "relUrl": "/docs/examples/parameter-study"
+    },"44": {
+      "doc": "Physics Model",
+      "title": "Configuration",
+      "content": "Just the Docs has some specific configuration parameters that can be defined in your Jekyll site’s _config.yml file. ",
+      "url": "/molecular-docs/docs/overview/physics-model.html#configuration",
+      "relUrl": "/docs/overview/physics-model.html#configuration"
+    },"45": {
+      "doc": "Physics Model",
+      "title": "Physics Model",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/physics-model.html",
+      "relUrl": "/docs/overview/physics-model.html"
+    },"46": {
+      "doc": "Publications",
+      "title": "Publications",
+      "content": " ",
+      "url": "/molecular-docs/docs/publications.html",
+      "relUrl": "/docs/publications.html"
+    },"47": {
+      "doc": "Results and Analysis",
+      "title": "Results and Analysis",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/results-and-analysis#results-and-analysis",
+      "relUrl": "/docs/overview/results-and-analysis#results-and-analysis"
+    },"48": {
+      "doc": "Results and Analysis",
+      "title": "Table of contents",
+      "content": ". | Implementation Overview . | Histograms | Tuples | . | Damage Classification Model | Output Format | . ",
+      "url": "/molecular-docs/docs/overview/results-and-analysis#table-of-contents",
+      "relUrl": "/docs/overview/results-and-analysis#table-of-contents"
+    },"49": {
+      "doc": "Results and Analysis",
+      "title": "Implementation Overview",
+      "content": "As the simulation runs, it keeps track of three main elements in relation to DNA damage. | Energy depositions in each chromosome (To-do: Add track length) | Energy Depositions and track length in the cell (when specified) | DNA Damage in the DNA geometry | . At the end of each event, the DNA Damage events are collected and analysed, reconstructing the damage pattern in the DNA and assigning it a complexity. In the damage model, a probability is assigned that certain events cause strand breaks (i.e. \\(Pr(\\ce{e^{-}_{aq}} + \\mathrm{Sugar} \\rightarrow \\mathrm{SSB})\\)). These conditions are tested at the end of each event when the analysis runs to determine the damage that occurs. At the completion of the run, the following outputs are saved: . Histograms . | foobar | barfoo | . Tuples . | Foo . | Bar | Baz | Box | . | Coo . | Dar | Daz | Dox | . | . ",
+      "url": "/molecular-docs/docs/overview/results-and-analysis#implementation-overview",
+      "relUrl": "/docs/overview/results-and-analysis#implementation-overview"
+    },"50": {
+      "doc": "Results and Analysis",
+      "title": "Damage Classification Model",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/results-and-analysis#damage-classification-model",
+      "relUrl": "/docs/overview/results-and-analysis#damage-classification-model"
+    },"51": {
+      "doc": "Results and Analysis",
+      "title": "Output Format",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/results-and-analysis#output-format",
+      "relUrl": "/docs/overview/results-and-analysis#output-format"
+    },"52": {
+      "doc": "Results and Analysis",
+      "title": "Results and Analysis",
+      "content": " ",
+      "url": "/molecular-docs/docs/overview/results-and-analysis",
+      "relUrl": "/docs/overview/results-and-analysis"
+    },"53": {
+      "doc": "Running from Source",
+      "title": "Running from source",
+      "content": " ",
+      "url": "/molecular-docs/docs/source.html#running-from-source",
+      "relUrl": "/docs/source.html#running-from-source"
+    },"54": {
+      "doc": "Running from Source",
+      "title": "Running from Source",
+      "content": " ",
+      "url": "/molecular-docs/docs/source.html",
+      "relUrl": "/docs/source.html"
+    }
   }
