@@ -3,7 +3,7 @@ namespace :search do
     task :init do
       puts 'Creating search data json file...'
       mkdir_p 'assets/js'
-      touch 'assets/js/zzzz-search-data.json'
+      touch 'assets/js/search-data.json'
       puts 'Done.'
       puts 'Generating content...'
   
