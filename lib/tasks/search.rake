@@ -7,11 +7,8 @@ namespace :search do
       puts 'Done.'
       puts 'Generating content...'
   
-      File.open('assets/js/zzzz-search-data.json', 'w') do |f|
-        f.puts '---
-permalink: /assets/js/search-data.json
----
-  {
+      File.open('assets/js/search-data.json', 'w') do |f|
+        f.puts '{
   {%- assign i = 0 -%}
   {%- assign pages_array = \'\' | split: \'\' -%}
   {%- assign pages_array = pages_array | push: site.html_pages -%}
