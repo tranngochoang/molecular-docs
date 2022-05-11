@@ -15,9 +15,9 @@ jobs:
       run: |
         docker run --rm \
         --volume="${{ github.workspace }}:/srv/jekyll" \
-        jekyll/builder:latest /bin/bash -c "gem install bundler && chmod -R 777 /srv/jekyll && bundle install && bundle exec jekyll build && bundle exec rake search:init"
+        jekyll/builder:latest /bin/bash -c "gem install bundler && chmod -R 777 /srv/jekyll && bundle install && bundle exec jekyll build -d build && bundle exec rake search:init"
 
     - name: Deploy site
       with:
-        build-dir: _site
+        build-dir: build
       uses:  NickSchimek/deploy_jamstack_action@main

@@ -9,8 +9,8 @@ namespace :search do
   
       File.open('assets/js/zzzz-search-data.json', 'w') do |f|
         f.puts '---
-  permalink: /assets/js/search-data.json
-  ---
+permalink: /assets/js/search-data.json
+---
   {
   {%- assign i = 0 -%}
   {%- assign pages_array = '' | split: '' -%}
