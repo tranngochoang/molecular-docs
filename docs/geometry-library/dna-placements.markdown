@@ -39,9 +39,9 @@ chain_turned_twisted = dnachain.TurnedTwistedDNAChain(
     ''.join(np.random.choice(['G', 'A', 'T', 'C'], num_basepairs_turned))
 )
 
-chain_straight.to_frame().to_csv('50nm_straight.csv', sep=' ')
-chain_turned.to_frame().to_csv('50nm_turn.csv', sep=' ')
-chain_turned_twisted.to_frame().to_csv('50nm_turn_twist.csv', sep=' ')
+chain_straight.to_frame().to_csv('50nm_straight.csv', sep=' ', index=False)
+chain_turned.to_frame().to_csv('50nm_turn.csv', sep=' ', index=False)
+chain_turned_twisted.to_frame().to_csv('50nm_turn_twist.csv', sep=' ', index=False)
 ```
 
 
@@ -84,9 +84,9 @@ chain4_turned_twisted = dnachain.FourStrandTurnedDNAChain(
     twist=True
 )
 
-chain4_straight.to_frame().to_csv('results/50nm_4_straight.csv', sep=' ')
-chain4_turned.to_frame().to_csv('results/50nm_4_turn.csv', sep=' ')
-chain4_turned_twisted.to_frame().to_csv('results/50nm_4_turn_twist.csv', sep=' ')
+chain4_straight.to_frame().to_csv('results/50nm_4_straight.csv', sep=' ', index=False)
+chain4_turned.to_frame().to_csv('results/50nm_4_turn.csv', sep=' ', index=False)
+chain4_turned_twisted.to_frame().to_csv('results/50nm_4_turn_twist.csv', sep=' ', index=False)
 ```
 
 ## Solenoidal DNA Segments
@@ -110,7 +110,7 @@ from fractaldna.dna_models import dnachain
 
 side_length = 750 # angstrom
 radius_solenoid = 100 # angstrom
-nhistones = 42 # histones
+nhistones = 38 # histones
 
 solenoid_straight = dnachain.Solenoid(
     voxelheight=side_length, radius=radius_solenoid, nhistones=nhistones
@@ -127,9 +127,9 @@ solenoid_straight.translate([0, 0, -side_length/2.])
 solenoid_turned.translate([0, 0, -side_length/2.])
 solenoid_turned_twisted.translate([0, 0, -side_length/2.])
 
-solenoid_straight.to_frame().to_csv('results/solenoid_straight.csv', sep=' ')
-solenoid_turned.to_frame().to_csv('results/solenoid_turned.csv', sep=' ')
-solenoid_turned_twisted.to_frame().to_csv('results/solenoid_turned_twisted.csv', sep=' ')
+solenoid_straight.to_frame().to_csv('results/solenoid_straight.csv', sep=' ', index=False)
+solenoid_turned.to_frame().to_csv('results/solenoid_turned.csv', sep=' ', index=False)
+solenoid_turned_twisted.to_frame().to_csv('results/solenoid_turned_twisted.csv', sep=' ', index=False)
 ```
 
 # Multiple Solenoidal Volumes
@@ -189,8 +189,8 @@ solenoid4_straight.translate([0, 0, -side_length/2.])
 solenoid4_turned.translate([0, 0, -side_length/2.])
 solenoid4_turned_twisted.translate([0, 0, -side_length/2.])
 
-solenoid4_straight.to_frame().to_csv('results/solenoid4_straight.csv', sep=' ')
-solenoid4_turned.to_frame().to_csv('results/solenoid4_turned.csv', sep=' ')
-solenoid4_turned_twisted.to_frame().to_csv('results/solenoid4_turned_twisted.csv', sep=' ')
+solenoid4_straight.to_frame().to_csv('results/solenoid4_straight.csv', sep=' ', index=False)
+solenoid4_turned.to_frame().to_csv('results/solenoid4_turned.csv', sep=' ', index=False)
+solenoid4_turned_twisted.to_frame().to_csv('results/solenoid4_turned_twisted.csv', sep=' ', index=False)
 
 ```
