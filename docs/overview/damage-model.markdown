@@ -19,12 +19,12 @@ permalink: /docs/overview/damage-model
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ## Direct Damage
 
 Direct Damage occurs when energy from physical processes is deposited near a DNA molecule.
-In Molecular DNA, we associate damage either with a 'strand' molecule (sugar or phosphate placement) 
+In Molecular DNA, we associate damage either with a 'strand' molecule (sugar or phosphate placement)
 or a base molecule.
 
 The maximum distance from the centre of a molecule which can result in any energy deposition tied to that model
@@ -56,7 +56,7 @@ Some models assume a step likelihood function for physical damage. This can be m
 
 Indirect Damage is scored when a chemical reaction leads to a strand break.
 The chemical reactions between radicals and DNA elements themselves are defined in the
-[Chemistry Model]( {{ "docs/overview/chemistry-model" | relative_url }} ) through the `MolecularChemistryList` class.
+[Chemistry Model]( {{ "docs/overview/chemistry-model" | relative_url }} ) through the `ChemistryList` class.
 
 The phosphate part of the sugar-phosphate backbone rarely takes part in reactions
 (reactions between radicals and phosphate are not even defined in the simulation),

@@ -16,7 +16,4 @@ The program takes inputs through the form of macro commands which define
 the geometry, damage model, physics, chemistry and run conditions for the
 simulation.
 
-If you are entirely new to this, the best place to start is looking at the [Anatomy of a Macro File]({{site.url}}/docs/overview/macro-anatomy).
-
-## Table of contents
-{: .no_toc .text-delta }
+If you are entirely new to this, the best place to start is looking at the [Anatomy of a Macro File]( {{ "/docs/overview/macro-anatomy" | relative_url }} ).
