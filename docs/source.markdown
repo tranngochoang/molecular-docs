@@ -18,7 +18,10 @@ make
 To run the example:
 ```
 ./molecular -m cylinders.mac -t 2 -p 2
-# -m : macro file [examples]({{ "/docs/examples/" | relative_url }})
-# -t : number of threads to run
-# -p : physics list option [physics-model]({{ "/docs/overview/physics-model" | relative_url }})
 ```
+
+-m : macro file [examples]({{ "/docs/examples/" | relative_url }})
+
+-t : number of threads to run
+
+-p : physics list option [physics-model]({{ "/docs/overview/physics-model" | relative_url }})
