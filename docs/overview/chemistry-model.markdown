@@ -11,9 +11,6 @@ Time step models describe an action (reaction or diffusion) of radio-induced rea
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. TOC
-{:toc}
-
 ## Synchronous IRT method
 
 The IRT method is based on the “Independent Pair Approximation”; thus, reactive pairs are assumed independent, that is, the reaction time between any reactant pairs does not depend on the other reactants present in the medium. Under this assumption, the reaction time is sampled from the reaction probability distributions of the reactant pairs that mainly depend on initial pair distance. The IRT method determines the minimum time to the next reaction. Reactive products created by reactions that have occurred can undergo reactions with other reactants. These new reactions then need to be considered and included in the possible reactions.

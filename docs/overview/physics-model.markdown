@@ -5,9 +5,6 @@ nav_order: 1
 parent: Overview
 ---
 
-# Configuration
-{: .no_toc }
+# Physics model
 
-
-Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's _config.yml file.
-{: .fs-6 .fw-300 }
+G4EmDNAPhysics_option2, G4EmDNAPhysics_option4 or G4EmDNAPhysics_option6 constructors are recommended to use in molecularDNA example. Water material is filled whole simulation geometry (even DNA)   
