@@ -1,7 +1,9 @@
 # Documentation for Molecular DNA
 
-The documentation here is built using Jekyll, which allows a static site to be built
+The documentation here is built using Jekyll, which allows to build https://geant4-dna.github.io/molecular-docs/
 using markdown.
+
+
 
 *Pushing this repository to the master branch will trigger a build of the
 website and documentation.*
