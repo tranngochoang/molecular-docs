@@ -7,7 +7,9 @@ nav_order: 5
 # Running from source
 {: .no_toc }
 
-Geant4.11.1beta or higher is requested. To build the example:
+Geant4.11.1beta or higher is requested [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }}). 
+
+To build the example:
 
 ```
 mkdir build
@@ -20,7 +22,7 @@ To run the example:
 ./molecular -m cylinders.mac -t 2 -p 2
 ```
 
--m : macro file [examples]({{ "/docs/examples/" | relative_url }})
+-m : macro file [examples]({{ "/docs/examples/parameter-study" | relative_url }})
 
 -t : number of threads to run
 
