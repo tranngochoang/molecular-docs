@@ -28,6 +28,6 @@ or dive into the documentation.
 
 [Get Started from Source]( {{ "/docs/source" | relative_url }} ){: .btn .btn-purple }
 [See Publications]({{ "docs/publications" | relative_url }} ){: .btn .btn-blue }
-[Explore Geometries]( {{ "docs/geometries/dna-placements" | relative_url }} ){: .btn .btn-green }
+[Explore Geometries]( {{ "docs/geometry-library/dna-placements" | relative_url }} ){: .btn .btn-green }
 
 Want to know more about how it all works? You'll want to visit our [Overview]( {{ "docs/overview" | relative_url }} ) page.

@@ -56,9 +56,9 @@ At the completion of the run, the following outputs are saved:
   6. Momentum X
   7. Momentum Y
   8. Momentum Ζ
-  9. 
 
-- source (Break Source Frequency)
+
+- Source (Break Source Frequency)
   1. Primary 
   2. Energy
   3. None
@@ -70,7 +70,8 @@ At the completion of the run, the following outputs are saved:
   9. DSBm
   10. DSBh
 
-- damage (DNA damage locations)
+
+- Damage (DNA damage locations)
   1. Event 
   2. Primary
   3. Energy
@@ -120,6 +121,6 @@ A python macro file is provided to modify ROOT output in SDD [2] file format:
                  source /path/to/root/bin/thisroot.(c)sh,
                  do "pip install pyroot" and try again.
 
-## reference
+## Reference
 1. Nikjoo, H., O’Neill, O., Goodhead, T., & Terrissol, M. 1997, Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, 71, 467
 2. A new standard DNA damage (SDD) data format, J. Schuemann, A. L. McNamara, J. W. Warmenhoven, N. T. Henthorn, K. Kirkby, M. J. Merchant, S. Ingram, H. Paganetti, K. D. Held, J. Ramos-Mendez, B. Faddegon, J. Perl, D. T. Goodhead, I. Plante, H. Rabus, H. Nettelbeck, W. Friedland, P. Kundrat, A. Ottolenghi, G. Baiocco, S. Barbieri, M. Dingfelder, S. Incerti, C. Villagrasa, M. Bueno, M. A. Bernal, S. Guatelli, D. Sakata, J. M. C. Brown, Z. Francis, I. Kyriakou, N. Lampe, F. Ballarini, M. P. Carante, M. Davidkova, V. Štěpan, X. Jia, F. A. Cucinotta, R. Schulte, R. D. Stewart, D. J. Carlson, S. Galer, Z. Kuncic, S. Lacombe, J. Milligan, S. H. Cho, G. Sawakuchi, T. Inaniwa, T. Sato, W. Li, A. V. Solov’yov, E. Surdutovich, M. Durante, K. Prise and S. J. McMahon, Rad. Res. 191 (2019) 76-92
