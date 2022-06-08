@@ -40,26 +40,86 @@ At the completion of the run, the following outputs are saved:
 
 ### Histograms
 
-- foobar
-- barfoo
+- SSB counter (ssb_counts)
+- Deposit energy in SSBs (ssb_energies_ev)
+- DNA fragment size
+- Strand interaction positions
 
 ### Tuples
 
-- Foo
-  1. Bar
-  1. Baz
-  1. Box
+- Primary Source
+  1. Primary 
+  2. Energy
+  3. PosX in um
+  4. PosY in um
+  5. PosZ in um
+  6. Momentum X
+  7. Momentum Y
+  8. Momentum Ζ
+  9. 
 
-- Coo
-  1. Dar
-  1. Daz
-  1. Dox
+- source (Break Source Frequency)
+  1. Primary 
+  2. Energy
+  3. None
+  4. SSBd
+  5. SSBi
+  6. SSBm
+  7. DSBd
+  8. DSBi
+  9. DSBm
+  10. DSBh
+
+- damage (DNA damage locations)
+  1. Event 
+  2. Primary
+  3. Energy
+  4. TypeClassification
+  5. SourceClassification
+  6. Position_x_um
+  7. Position_y_um
+  8. Position_z_um
+  9. Size_nm
+  10. FragmentLength
+  11. BaseDamage
+  12. StrandDamage
+  13. DirectBreaks
+  14. IndirectBreaks
+  15. EaqBaseHits
+  16. EaqStrandHits
+  17. OHBaseHits
+  18. OHStrandHits
+  19. HBaseHits
+  20. HStrandHits
+  21. EnergyDeposited_eV
+  22. InducedBreaks
+  23. Chain
+  24. Strand
+  25. BasePair
+  26. Name
 
 
 
 ## Damage Classification Model
 
+![damageScheme]({{"/assets/images/damageScheme.png" | relative_url}})
+{: .text-center}
 
+Breaks in a DNA segment are classified both by complexity (left) and source (right) [1] . The model entails two parameters, dDSB is the maximum separation between two damage sites on alternate sides of a DNA strand for us to consider that a DSB has occurred (typically dDSB = 10 bp). ds is the distance between two damage sites for us to consider that the damage events should be considered as two separate breakages (yielding two separate segments that need classification). Whilst many of the classifications are clear, we note that a DSB+ requires a DSB and at least one additional break within a ten base pair separation, while a DSB++ requires at least two DSBs along the segment, regardless of whether they are within dDSB of each other or not. For break complexity, the most complex break type is always chosen. When classifying breaks by source, we pay attention not to all damage along the strand, but to the damage which causes DSBs only. DSBs from only indirect sources are classified as DSBi, and those only from direct sources are classified as DSBd. DSBhyb is distinguished from DSBm, as DSBhyb requires that the DSB not occur in the absence of indirect damage. Otherwise, a break caused by indirect and direct sources is classified as DSBm. Where a segment contains both indirect and direct DSBs, it is classified as DSBm. Similarly, when a segment contains a DSB classified as DSBhyb in conjunction with a direct DSB or mixed DSB, it takes the DSBm classification, otherwise it keeps the classification DSBhyb.
+## Analysis files
 
-## Output Format
+Several ROOT macro files are provided in the analysis directory:
+- cylinders.C : to plot damage from cylinders geometry
+- ecoli.C : to plot damage from ecoli geometry
+- human_cell.C : to plot damage and fragments distribution from human_cell
+geometry
+  
+A python macro file is provided to modify ROOT output in SDD [2] file format:
+- createSDD.py : to use it, insert the command "python3 createSDD.py".
+                 If error with root, simply 
+                 source /path/to/root/bin/thisroot.(c)sh,
+                 do "pip install pyroot" and try again.
 
+## reference
+1. Nikjoo, H., O’Neill, O., Goodhead, T., & Terrissol, M. 1997, Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, 71, 467
+2. A new standard DNA damage (SDD) data format, J. Schuemann, A. L. McNamara, J. W. Warmenhoven, N. T. Henthorn, K. Kirkby, M. J. Merchant, S. Ingram, H. Paganetti, K. D. Held, J. Ramos-Mendez, B. Faddegon, J. Perl, D. T. Goodhead, I. Plante, H. Rabus, H. Nettelbeck, W. Friedland, P. Kundrat, A. Ottolenghi, G. Baiocco, S. Barbieri, M. Dingfelder, S. Incerti, C. Villagrasa, M. Bueno, M. A. Bernal, S. Guatelli, D. Sakata, J. M. C. Brown, Z. Francis, I. Kyriakou, N. Lampe, F. Ballarini, M. P. Carante, M. Davidkova, V. Štěpan, X. Jia, F. A. Cucinotta, R. Schulte, R. D. Stewart, D. J. Carlson, S. Galer, Z. Kuncic, S. Lacombe, J. Milligan, S. H. Cho, G. Sawakuchi, T. Inaniwa, T. Sato, W. Li, A. V. Solov’yov, E. Surdutovich, M. Durante, K. Prise and S. J. McMahon, Rad. Res. 191 (2019) 76-92
