@@ -15,15 +15,15 @@ permalink: /
 Radiation-induced DNA damage simulations in Geant4.
 {: .fs-6 .fw-300 }
 
-Molecular DNA is a Geant4-DNA program built to allow easy simulation of
+Molecular DNA is a Geant4-DNA example built to allow easy simulation of
 radiation-induced DNA damage with *flexible geometries* and well defined
 *damage parameters*.
 
 Get started right away using our *docker container* and a *library of pre-existing geometries*,
 or dive into the documentation.
 
-[Get Started from Source]({{site.url}}/docs/source.html){: .btn .btn-purple }
-[See Publications]({{site.url}}/docs/publications.html){: .btn .btn-blue }
-[Explore Geometries]({{site.url}}/docs/geometries.html){: .btn .btn-green }
+[Get Started from Source]( {{ "/docs/source" | relative_url }} ){: .btn .btn-purple }
+[See Publications]({{ "docs/publications" | relative_url }} ){: .btn .btn-blue }
+[Explore Geometries]( {{ "docs/geometries" | relative_url }} ){: .btn .btn-green }
 
-Want to know more about how it all works? You'll want to visit our [Overview]({{site.url}}/docs/overview) page.
+Want to know more about how it all works? You'll want to visit our [Overview]( {{ "docs/overview" | relative_url }} ) page.

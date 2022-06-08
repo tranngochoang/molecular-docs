@@ -35,9 +35,12 @@ This geometry consists of a continuous chain defined by taking a basic Hilbert c
 ![human_Cell]({{"/assets/images/humanCell02.jpg" | relative_url}})
 {: .text-right}
 
+The DNA model in our simulation consists of joined straight (a), turned (c) and turned-twisted (e) chromatin segments. At a high level (a, c, e), the chromatin segments consist of a series of histones (DNA marked in yellow, protein core shown in blue). These are joined by linking sections (green) that were calculated along 3D-spline functions. The detailed structure of the straight and turned segments is also shown (b, d), with yellow lines joining the phosphate molecules and red lines joining the sugar molecules. The rotated direction of DNA fiber at beginning in both turned and turned-twisted segments is shown as red line (f). The rotated direction of DNA fiber at ending in turned segment is shown as red line and the direction in turned-twisted segment is shown as blue line (g).
+
 ![human_Cell]({{"/assets/images/humanCell01.jpg" | relative_url}})
 {: .text-left}
 
+Left: The 3D geometry of the cell nucleus ( 14.2μm x 14.2μm x 5μm ) used in this simulation, showing the continuous fractal interior. Right: The beam geometry used in these simulations, showing the incident protons as a parallel beam.
 ## Particle source
 A proton source plane with circle radius 7.1 um was located 3 μm from the cell center. 
 ```
