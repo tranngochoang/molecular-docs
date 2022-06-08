@@ -6,7 +6,15 @@ parent: Overview
 ---
 # Repair Model
 
-This model calculates the accumulated proteins yield, by considering four principal DSB repair pathways. These pathways are a) non-homologous end-joining (NHEJ), b) homologous recombination (HR), c) single-strand annealing (SSA), and d) alternative end-joining mechanism (Alt-NHEJ). The number of non-repairable DSB/Gy/cell is needed (N_{cDSB}), as well as the number of DSBs that is more probable to be repaired (N_ncDSB). More analytically, by [belov]:
+This model calculates the accumulated proteins yield, by considering four principal DSB repair pathways. 
+
+These pathways are: 
+- non-homologous end-joining (NHEJ),
+- homologous recombination (HR), 
+- single-strand annealing (SSA), and 
+- alternative end-joining mechanism (Alt-NHEJ). 
+
+The number of non-repairable DSB/Gy/cell is needed ($N_cDSB$), as well as the number of DSBs that is more probable to be repaired (N_ncDSB). More analytically:
 
 ![repair Model]({{"/assets/images/repairMode.png" | relative_url}})
 {: .text-center}
