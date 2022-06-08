@@ -10,10 +10,14 @@ parent: Examples
 
 ## Table of contents
 {: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ## Overview
-The simulation geometry based upon a previous study of direct and indirect DNA damage yields in straight DNA fibres [1]. 
+The simulation geometry based upon a past parameter study[1] of direct and indirect DNA damage yields in straight DNA fibres. 
 ## Geometry
-The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume.
+The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume. Radical kill distance [Damage Model]( {{ "docs/overview/damage-model" | relative_url }} )  was set to 9 nm, as well as the range for direct interaction was set to 7 A
 
 ```
 /world/worldSize 10200 nm
