@@ -19,7 +19,7 @@ Molecular DNA is a Geant4-DNA example built to allow easy simulation of
 radiation-induced DNA damage with *flexible geometries* and well defined
 *damage parameters*.
 
-Get started right away in geant4/example/extended/medical/dna/moleculardna and a *library of pre-existing geometries*,
+Get started right away in *geant4/example/extended/medical/dna/moleculardna* with a *library of pre-existing geometries*,
 or dive into the documentation.
 
 ![humanCell]({{"/assets/images/humanCell.png" | relative_url}})
