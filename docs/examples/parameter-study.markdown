@@ -34,7 +34,6 @@ The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000
 /dnageom/definitionFile geometries/prisms200k_r3000.txt
 /dnageom/placementVolume prism geometries/straight-216-0.txt
 
-
 /dnageom/setVoxelPlacementAnglesAsMultiplesOfPi false
 /dnageom/useCustomMoleculeSizes false
 ```
@@ -55,7 +54,7 @@ Primary electrons are generated randomly, with a random direction in a smaller 5
 /run/beamOn 2
 ```
 ## Damage Model
-Direct damage model uses the 17.5 eV for lower and upper break threshold. 
+Direct damage model uses the 17.5 eV for lower and upper break thresholds. 
 ```
 /dnadamage/directDamageLower 17.5 eV
 /dnadamage/directDamageUpper 17.5 eV

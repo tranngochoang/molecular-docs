@@ -56,3 +56,21 @@ A proton source plane with circle radius 7.1 um was located 3 μm from the cell 
 /gps/energy 50 MeV
 /run/beamOn 2
 ```
+## Damage Model
+Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper break threshold. The probability of 42% for the production of strand break.
+```
+/dnadamage/directDamageLower 5 eV
+/dnadamage/directDamageUpper 37.5 eV
+
+/dnadamage/indirectOHBaseChance 1.0
+/dnadamage/indirectOHStrandChance 0.405
+/dnadamage/inductionOHChance 0.00
+
+/dnadamage/indirectHBaseChance 1.0
+/dnadamage/indirectHStrandChance 0.0
+/dnadamage/inductionHChance 0.00
+
+/dnadamage/indirectEaqBaseChance 1.0
+/dnadamage/indirectEaqStrandChance 0.0
+/dnadamage/inductionEaqChance 0.00
+```
