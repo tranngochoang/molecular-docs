@@ -16,7 +16,7 @@ parent: Examples
 ## Overview
 DNA damage induced in a simplified human fibroblast cell was evaluated using the proposed changes and compared with experimental data.
 ## Geometry
-
+This geometry consists of a continuous chain defined by taking a basic Hilbert curve. This fractal is broken into cubic regions of straight and turned chromatin sections [DNA placement]({{"/docs/geometry-library/dna-placements" | relative_url}}). This chain is included in an ellipsoid with semi-dimensions 7.1x2.5x7.1 μm, which imitates a cell nucleus. Only cubes that are completely included in the ellipsoid are considered as parts of the chain, which length is 6.4 Gbp. Bp density of the produced cell corresponds to ~0.015 bp/nm3.
 ```
 /world/worldSize 50 um
 /cell/radiusSize 14 2.5 14 um
@@ -32,11 +32,14 @@ DNA damage induced in a simplified human fibroblast cell was evaluated using the
 /dnageom/placementVolume turntwist geometries/turned_twisted_solenoid_750_withHistone.txt true
 /dnageom/placementVolume straight geometries/straight_solenoid_750_withHistone.txt
 ```
-![human_Cell]({{"/assets/images/humanCellImage.png" | relative_url}})
-{: .text-center}
+![human_Cell]({{"/assets/images/humanCell02.jpg" | relative_url}})
+{: .text-right}
+
+![human_Cell]({{"/assets/images/humanCell01.jpg" | relative_url}})
+{: .text-left}
 
 ## Particle source
-
+A proton source plane with circle radius 7.1 um was located 3 μm from the cell center. 
 ```
 /gps/pos/type Plane
 /gps/pos/shape Circle
