@@ -17,6 +17,8 @@ cd build
 cmake ../pathToExamples/moleculardna
 make
 ```
+This example needs internet to download the pre-existing geometry data file. Please, check your connection. 
+
 To run the example:
 ```
 ./molecular -m cylinders.mac -t 2 -p 2
