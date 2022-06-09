@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Running from Source
+title: Running the example
 nav_order: 5
 ---
 
