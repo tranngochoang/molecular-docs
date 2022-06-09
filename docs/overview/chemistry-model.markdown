@@ -41,7 +41,15 @@ Indirect damage occurs from the chemical reaction between a radical and a DNA mo
 | Thymine + H●                                  | 0.57                          |
 | Cytosine + H●                                 | 0.092                         |
 
+## Use of parallel worlds
+The Geant4 chemistry module has difficulty dealing with complicated geometries due to dissociation processes, which can place the products of the molecular dissociation of an energetic molecule way from the dissociating molecule and geometry navigation, which requests computation time.  To avoid having too many geometrical boundaries in chemistry simulations, all the physical volumes are placed in a separate parallel world, using the layered geometries offered by Geant4 (Enger et al., 2012). Thus, the physically placed DNA molecules described in this section are only seen by physical processes, and their boundaries are effectively ignored by chemistry. At each time step, chemical species are requests to look up nearby DNA molecules using an octree data structure via a (something to fill) with the mother placement volume.
 
+## Tips
+
+Activate chemistry module using : 
+```
+/chem/activate true
+```
 The chemistry stage is simulated until 1 microsecond (by default). Users can decide the end time by using :
 ```
 /scheduler/endTime 4 ns # set 4 nanosecond at which the simulation stops
