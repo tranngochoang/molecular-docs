@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Damage Model
-nav_order: 2
+nav_order: 5
 parent: Overview
 permalink: /docs/overview/damage-model
 ---
@@ -16,6 +16,8 @@ permalink: /docs/overview/damage-model
 
 ## Table of contents
 {: .no_toc .text-delta }
+1. TOC
+{:toc}
 
 ## Direct Damage
 
