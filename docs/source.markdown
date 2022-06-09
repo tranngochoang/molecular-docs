@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Running from Source
+title: Running the example
 nav_order: 5
 ---
 
-# Running from source
+# Running the example
 {: .no_toc }
 
 Geant4.11.1beta or higher is requested [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }}). 

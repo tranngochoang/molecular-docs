@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Configuration Glossary
-nav_order: 5
+nav_order: 8
 parent: Overview
 permalink: docs/overview/configuration
 ---

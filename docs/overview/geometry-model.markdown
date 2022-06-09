@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Geometry Model
-nav_order: 1
+nav_order: 4
 parent: Overview
 permalink: /docs/overview/geometry-model
 ---
