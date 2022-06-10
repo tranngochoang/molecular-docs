@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Running the example
-nav_order: 5
+nav_order: 4
 ---
 
 # Running the example
