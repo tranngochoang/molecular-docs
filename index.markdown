@@ -26,7 +26,7 @@ or dive into the documentation.
 {: .text-center}
 [human cell example]({{"/docs/examples/human-cell" | relative_url}})
 
-[Get Started from Source]( {{ "/docs/source" | relative_url }} ){: .btn .btn-purple }
+[Get Started from Examples]( {{ "/docs/source" | relative_url }} ){: .btn .btn-purple }
 [See Publications]({{ "docs/publications" | relative_url }} ){: .btn .btn-blue }
 [Explore Geometries]( {{ "docs/geometry-library/dna-placements" | relative_url }} ){: .btn .btn-green }
 

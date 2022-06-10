@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Geometry Library
-nav_order: 3
+nav_order: 6
 has_children: true
 permalink: docs/geometry-library
 ---
