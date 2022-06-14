@@ -13,3 +13,14 @@ nav_order: 5
 - Mechanistic DNA Damage Simulations in Geant4-DNA Part 1: A parameter study in a simplified geometry, N. Lampe, M. Karamitros, V. Breton, J. M. C. Brown, I. Kyriakou, D. Sakata, D. Sarramia, S. Incerti, Phys. Med. 48 (2018) 135-145 [link]({{ "https://doi.org/10.1016/j.ejmp.2018.02.011" | relative_url }})
 
 Find more in [Geant4-DNA projet]({{ "http://geant4-dna.in2p3.fr/styled-2/index.html" | relative_url }})
+
+## Authors
+
+- Nathanael Lampe
+- Mathieu Karamitros
+- Dousatsu Sakata
+- Wook-Geun Shin
+- Milos Dordevic 
+- Konstantinos Chatzipapas
+- Sebastien Incerti
+- Hoang Tran

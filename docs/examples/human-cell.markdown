@@ -14,7 +14,7 @@ parent: Examples
 {:toc}
 
 ## Overview
-DNA damage induced in a simplified human fibroblast cell was evaluated using the proposed changes and compared with experimental data.
+DNA damage induced in a simplified human fibroblast cell was evaluated using the proposed changes and compared with experimental data. A large amount of memory and computer performance will be required for this example.
 ## Geometry
 This geometry consists of a continuous chain defined by taking a basic Hilbert curve. This fractal is broken into cubic regions of straight and turned chromatin sections [DNA placement]({{"/docs/geometry-library/dna-placements" | relative_url}}). This chain is included in an ellipsoid with semi-dimensions 7.1x2.5x7.1 μm, which imitates a cell nucleus. Only cubes that are completely included in the ellipsoid are considered as parts of the chain, which length is 6.4 Gbp. Bp density of the produced cell corresponds to ~0.015 bp/nm3.
 ```
@@ -57,7 +57,7 @@ A proton source plane with circle radius 7.1 um was located 3 μm from the cell 
 /run/beamOn 2
 ```
 ## Damage Model
-Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper break threshold. The probability of 42% for the production of strand break.
+Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper break threshold. The probability of 40.5% for the production of strand break.
 ```
 /dnadamage/directDamageLower 5 eV
 /dnadamage/directDamageUpper 37.5 eV
@@ -74,3 +74,5 @@ Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper bre
 /dnadamage/indirectEaqStrandChance 0.0
 /dnadamage/inductionEaqChance 0.00
 ```
+## Results
+Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using human_cell.C macro file. 

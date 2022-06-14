@@ -72,3 +72,7 @@ Direct damage model uses the 17.5 eV for lower and upper break threshold. The pr
 /dnadamage/indirectEaqStrandChance 1.0
 /dnadamage/inductionEaqChance 0.00
 ```
+
+## Results
+Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using ecoli.C macro file. 
+
