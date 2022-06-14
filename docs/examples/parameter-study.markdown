@@ -51,7 +51,7 @@ Primary electrons are generated randomly, with a random direction in a smaller 5
 /gps/pos/shape Sphere
 /gps/pos/radius 500 nm
 /gps/pos/centre 0 0 0 nm
-/run/beamOn 2
+/run/beamOn 1000000
 ```
 ## Damage Model
 Direct damage model uses the 17.5 eV for lower and upper break thresholds. 
@@ -76,6 +76,8 @@ Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is ana
 
 ![cylinders]({{"/assets/images/cylinders.png" | relative_url}})
 {: .text-left}
+
+Refer [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}}) for detail of source and complexity frequency.
 
 
 ## Reference
