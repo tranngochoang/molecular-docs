@@ -150,7 +150,8 @@ This particular file handles the space in integer units, so that we can scale th
 ## Define the Chromosomes
 
 In Molecular DNA, you can think of chromosomes as *regions of interest* for analysis. Currently, cylindrical, spherical and elliptical chromosome
-shapes can be defined, which are mapped onto the placement volumes defined by the large scale geometry.
+shapes can be defined, w
+hich are mapped onto the placement volumes defined by the large scale geometry.
 
 The below image shows, for example how two chromosomes can be defined to yield two regions of interest,
 overlaid on the grid which defines the overall geometry. Where chromosome regions overlap, energy depositions will

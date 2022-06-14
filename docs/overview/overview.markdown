@@ -14,6 +14,6 @@ DNA damage using only Geant4 macro commands - No C++ skills needed.
 
 The program takes inputs through the form of macro commands which define
 the geometry, damage model, physics, chemistry and run conditions for the
-simulation.
+simulation until principal DSB repair pathways.
 
 If you are entirely new to this, the best place to start is looking at the [Anatomy of a Macro File]( {{ "/docs/overview/macro-anatomy" | relative_url }} ).

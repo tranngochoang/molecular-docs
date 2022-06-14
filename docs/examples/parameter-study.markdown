@@ -15,7 +15,7 @@ parent: Examples
 {:toc}
 
 ## Overview
-The simulation geometry based upon a past parameter study[1] of direct and indirect DNA damage yields in straight DNA fibres. 
+The simulation geometry based upon a past parameter study[1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters. 
 ## Geometry
 The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume. Radical kill distance [Damage Model]( {{ "docs/overview/damage-model" | relative_url }} )  was set to 9 nm, as well as the range for direct interaction was set to 7 A
 
@@ -71,6 +71,8 @@ Direct damage model uses the 17.5 eV for lower and upper break thresholds.
 /dnadamage/indirectEaqStrandChance 0.65
 /dnadamage/inductionEaqChance 0.00
 ```
+## Results
+Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using cylinders.C macro file.
 
 
 
