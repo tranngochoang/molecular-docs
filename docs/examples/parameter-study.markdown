@@ -74,6 +74,8 @@ Direct damage model uses the 17.5 eV for lower and upper break thresholds.
 ## Results
 Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using cylinders.C macro file.
 
+![cylinders]({{"/assets/images/cylinders.png" | relative_url}})
+{: .text-left}
 
 
 ## Reference

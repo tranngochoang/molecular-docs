@@ -15,7 +15,7 @@ The energy transfer induced by ionizing radiation in a water medium occurs rapid
 These species are created in a very short time (from femtoseconds (fs) to picoseconds (ps)), mainly through electronic events during the pre-chemical stage. 
 These events—such as thermalization, solvation of sub-excitation electrons, electronic hole migration, and fast electronic recombination can lead to chemical bond breaks and produce species. 
 
-The excited H2O* and ionized H2O+ water molecules are dissociated into radical species based on dissociation channels used in Geant4-DNA.
+The excited H2O* and ionized H2O+ water molecules are dissociated into radical species based on dissociation channels used in Geant4-DNA [1][2].
 
 ![pre-chemistry]({{"/assets/images/pre-chemistry.png" | relative_url}})
 {: .text-center}
@@ -40,7 +40,7 @@ While this is a considerable advantage in terms of computing time, the spatial�
 Indirect damage occurs from the chemical reaction between a radical and a DNA molecule (see the table below). To induce indirect strand breaks, the chemical reaction occurs between the •OH radical and the 2-deoxyribose-phosphate group. The probablities to induce a single strand break are described in the
 [Indirect Damage]( {{ "docs/overview/damage-model" | relative_url }} ) through `DamageModel` class.
 
-| Reaction                                      | Reaction rate (109 M-1s-1)[1] |
+| Reaction                                      | Reaction rate (109 M-1s-1)[3] |
 |:----------------------------------------------|:------------------------------|
 | 2-deoxyribose + OH●                           | 1.8                           |
 | Adenine + OH●                                 | 6.1                           |
@@ -64,7 +64,7 @@ The Geant4 chemistry module has difficulty dealing with complicated geometries d
 
 Activate chemistry module using : 
 ```
-/chem/activate true # false for desactivation
+/chem/activate true # false for deactivation
 ```
 The chemistry stage is simulated until 1 microsecond (by default). Users can decide the end time by using :
 ```
@@ -76,5 +76,6 @@ To print reactions
 /scheduler/verbose 1
 ```
 ## Reference 
-
-1. Buxton GV, Greeanstock CL, Helman WP, Ross AB. Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution. J Phys Chem Ref Data. 1988;17:513–886.
+1. Modeling radiation chemistry in the Geant4 toolkit, M. Karamitros et al., Prog. Nucl. Sci. Tec. 2 (2011) 503-508 (link)
+2. Geant4-DNA simulation of the pre-chemical stage of water radiolysis and its impact on initial radiochemical yields, W.-G. Shin, J. Ramos-Mendez, N. H. Tran, S. Okada, Y. Perrot, C. Villagrasa, S. Incerti, Phys. Med. 88 (2021) 86-90.
+3. Buxton GV, Greeanstock CL, Helman WP, Ross AB. Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution. J Phys Chem Ref Data. 1988;17:513–886.
