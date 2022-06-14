@@ -3,7 +3,7 @@ layout: default
 title: Bacterial Cell
 nav_order: 2
 permalink: docs/examples/bacterial-cell
-parent: Examples
+parent: Available Geometries
 ---
 
 # Bacterial cell (ecoli.mac)
@@ -25,7 +25,7 @@ The genome has been produced using four side-by-side Hilbert curve fractals [fra
 /world/worldSize 8 um
 /dnageom/setSmartVoxels 20
 
-/dnageom/radicalKillDistance 6 nm
+/dnageom/radicalKillDistance 4 nm
 /dnageom/interactionDirectRange 6 angstrom
 
 /dnageom/placementSize 50 50 50 nm
@@ -51,25 +51,25 @@ Electrons are simulated coming from an ellipse enclosing the bacterial cell (of 
 /gps/pos/halfz 400 nm
 /gps/ang/type cos
 /gps/particle e-
-/gps/energy 9.999 keV
-/run/beamOn 1000
+/gps/energy 0.4 MeV
+/run/beamOn 200000
 ```
 ## Damage Model
-Direct damage model uses the 17.5 eV for lower and upper break threshold. The probability of 42% for the production of strand break by OH (OH● + 2-deoxyribose) was applied.
+Direct damage model uses the 17.5 eV for lower and upper break threshold. The probability of 40% for the production of strand break by OH (OH● + 2-deoxyribose) was applied.
 ```
 /dnadamage/directDamageLower 17.5 eV
 /dnadamage/directDamageUpper 17.5 eV
 
 /dnadamage/indirectOHBaseChance 1.0
-/dnadamage/indirectOHStrandChance 0.42
+/dnadamage/indirectOHStrandChance 0.4
 /dnadamage/inductionOHChance 0.05
 
 /dnadamage/indirectHBaseChance 1.0
-/dnadamage/indirectHStrandChance 1.0
+/dnadamage/indirectHStrandChance 0.4
 /dnadamage/inductionHChance 0.00
 
 /dnadamage/indirectEaqBaseChance 1.0
-/dnadamage/indirectEaqStrandChance 1.0
+/dnadamage/indirectEaqStrandChance 0.4
 /dnadamage/inductionEaqChance 0.00
 ```
 
@@ -79,5 +79,15 @@ Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is ana
 ![ecoli]({{"/assets/images/ecoli.png" | relative_url}})
 {: .text-left}
 
+**Species Hits (Gy-1 Mbp-1)** is defined by radical + DNA reactions,
+for example: EaqStrandHits is e_aq + DNA backbone
+
+
+**Damage yield (Gy-1 Gbp-1)** is defined by DNA damage complexity [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}})
+
+
+**Breaks yield (Gy-1 Gbp-1)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
+
 ![ecoli]({{"/assets/images/ecoli_Fra.png" | relative_url}})
 {: .text-left}
+Fragments distribution of DNA. A Fragment is defined by a distance between two DSB. 

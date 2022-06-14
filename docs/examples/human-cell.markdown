@@ -3,7 +3,7 @@ layout: default
 title: Human Cell
 nav_order: 3
 permalink: docs/examples/human-cell
-parent: Examples
+parent: Available Geometries
 ---
 # Human cell (human_cell.mac)
 
@@ -53,8 +53,8 @@ A proton source plane with circle radius 7.1 um was located 3 μm from the cell 
 /gps/direction 0 -1 0
 /gps/particle  proton
 /analysisDNA/fileName 50MeV
-/gps/energy 50 MeV
-/run/beamOn 2
+/gps/energy 0.4 MeV
+/run/beamOn 215
 ```
 ## Damage Model
 Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper break threshold. The probability of 40.5% for the production of strand break.
@@ -80,8 +80,17 @@ Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is ana
 ![human_Cell]({{"/assets/images/human_cell_results.png" | relative_url}})
 {: .text-left}
 
+**Species Hits (Gy-1 Mbp-1)** is defined by radical + DNA reactions, 
+for example: EaqStrandHits is e_aq + DNA backbone
 
+
+**Damage yield (Gy-1 Gbp-1)** is defined by DNA damage complexity [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}})
+
+
+**Breaks yield (Gy-1 Gbp-1)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
 
 ![human_Cell]({{"/assets/images/human_cell_Fra.png" | relative_url}})
 {: .text-left}
+
+Fragments distribution of DNA. A Fragment is defined by a distance between two DSB. 
 
