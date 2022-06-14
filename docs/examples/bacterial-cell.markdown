@@ -76,3 +76,8 @@ Direct damage model uses the 17.5 eV for lower and upper break threshold. The pr
 ## Results
 Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using ecoli.C macro file. 
 
+![ecoli]({{"/assets/images/ecoli.png" | relative_url}})
+{: .text-left}
+
+![ecoli]({{"/assets/images/ecoli_Fra.png" | relative_url}})
+{: .text-left}

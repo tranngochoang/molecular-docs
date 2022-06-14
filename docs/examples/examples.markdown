@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Examples
+title: Available Geometries
 permalink: docs/examples
 has_children: true
 nav_order: 3
