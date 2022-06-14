@@ -32,7 +32,7 @@ This geometry consists of a continuous chain defined by taking a basic Hilbert c
 /dnageom/placementVolume turntwist geometries/turned_twisted_solenoid_750_withHistone.txt true
 /dnageom/placementVolume straight geometries/straight_solenoid_750_withHistone.txt
 ```
-![human_Cell]({{"/assets/images/human_cell.jpg" | relative_url}})
+![human_Cell]({{"/assets/images/human_cell.png" | relative_url}})
 {: .text-right}
 
 The DNA model in the simulation. 
