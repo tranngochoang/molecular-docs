@@ -90,4 +90,4 @@ for example: EaqStrandHits is e_aq + DNA backbone
 
 ![ecoli]({{"/assets/images/ecoli_Fra.png" | relative_url}})
 {: .text-left}
-Fragments distribution of DNA. A Fragment is defined by a distance between two DSB. 
+*Fragments distribution of DNA. A Fragment is defined by a distance between two DSB.*
