@@ -11,6 +11,7 @@ Geant4-DNA Monte-Carlo track-structure code describes spatial distribution of en
 
 ![physics]({{"/assets/images/DNAPhysics.mp4" | relative_url}})
 {: .text-center}
+Example of movie by V. Stepan : 20 keV electron and 20 MeV alpha tracks in 10 micrometer cube of liquid water, generated using Geant4 10.0p2 microdosimetry example.
 
 G4EmDNAPhysics_option2, G4EmDNAPhysics_option4 or G4EmDNAPhysics_option6 constructors are recommended to use in molecularDNA example. Water material is filled whole simulation geometries (even DNA). 
 
