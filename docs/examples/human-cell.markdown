@@ -80,17 +80,17 @@ Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is ana
 ![human_Cell]({{"/assets/images/human_cell_results.png" | relative_url}})
 {: .text-left}
 
-**Species Hits (Gy-1 Mbp-1)** is defined by radical + DNA reactions, 
+- **Species Hits (Gy-1 Mbp-1)** is defined by radical + DNA reactions, 
 for example: EaqStrandHits is e_aq + DNA backbone
 
 
-**Damage yield (Gy-1 Gbp-1)** is defined by DNA damage complexity [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}})
+- **Damage yield (Gy-1 Gbp-1)** is defined by DNA damage complexity [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}})
 
 
-**Breaks yield (Gy-1 Gbp-1)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
+- **Breaks yield (Gy-1 Gbp-1)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
 
 ![human_Cell]({{"/assets/images/human_cell_Fra.png" | relative_url}})
 {: .text-left}
 
-Fragments distribution of DNA. A Fragment is defined by a distance between two DSB. 
+*Fragments distribution of DNA. A fragment is defined by a distance between two DSBs.* 
 
