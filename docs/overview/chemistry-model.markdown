@@ -20,6 +20,8 @@ The excited H2O* and ionized H2O+ water molecules are dissociated into radical s
 ![pre-chemistry]({{"/assets/images/pre-chemistry.png" | relative_url}})
 {: .text-center}
 
+The molecularDNA example is using the "option3" dissociation channels as default. 
+
 # Time Step Models
 
 Chemistry stage starts from 1 ps for all radio-induced reactive species which are assumed to be hard spherical particles while water is considered as a continuum. In this stage, time step models describe an action (reaction or diffusion) of species during a discretized time step. In the MolecularDNA example, the time step models determinate a competition between free radical species recombination and indirect DNA damages.
