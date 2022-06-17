@@ -14,15 +14,18 @@ These pathways are [1]:
 - single-strand annealing (SSA), and 
 - alternative end-joining mechanism (Alt-NHEJ). 
 
-The number of non-repairable DSB/Gy/cell is needed ($N_cDSB$), as well as the number of DSBs that is more probable to be repaired (N_ncDSB). More analytically:
+The number of non-repairable DSB/Gy/cell is needed (NcDSB), as well as the number of DSBs that is more probable to be repaired (NncDSB). More analytically:
 
 ![repair Model]({{"/assets/images/repairMode.png" | relative_url}})
 {: .text-center}
 
 
 Where: 
-- N_0 is the total numbe of DSB (N_ncDSB + N_cDSB). 
+- N0 is the total numbe of DSB (NncDSB + NcDSB). 
 - VNHEJ, VHR, VSSA and VmicroSSA are mathematical variables that characterize the way that each model affects 
 the way that DSBs are repaired. 
 - D is the dose (Gy). 
 - a(L) is the slope coefficient of linear dose dependence that describes DSB induction per unit of dose (Gy−1/cell) and depends on LET. 
+
+## Reference
+[1] D. Sakata, M. Suzuki, R. Hirayama, Y. Abe, M. Muramatsu, S. Sato, et al., "Performance Evaluation for Repair of HSGc-C5 Carcinoma Cell Using Geant4-DNA," Cancers, vol. 13, p. 6046, 2021.
