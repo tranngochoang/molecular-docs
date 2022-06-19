@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Geometry Library
+title: Building Geometries
 nav_order: 6
 has_children: true
-permalink: docs/geometry-library
+permalink: docs/building-geometries
 ---
 
-# Geometry Library
+# Building Geometries
 {: .no-toc}
 
 Here you'll find geometries that can be used with the Molecular DNA package.

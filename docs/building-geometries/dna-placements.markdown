@@ -3,8 +3,10 @@ layout: default
 title: DNA Placements
 nav_order: 2
 permalink: docs/geometry-library/dna-placements
-parent: Geometry Library
+parent: Building Geometries
 ---
+
+# DNA Placements
 
 The DNA Placements here were built using the [FractalDNA]({{site.url}}/docs/geometry-library/fractal-dna)
 package in Python. Accompanying each geometry is the Python code to
