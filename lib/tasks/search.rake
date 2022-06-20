@@ -3,14 +3,14 @@ namespace :search do
     task :init do
       puts 'Creating search data json file...'
       mkdir_p 'assets/js'
-      touch 'assets/js/search-data.json'
+      touch 'assets/js/zzzz-search-data.json'
       puts 'Done.'
       puts 'Generating content...'
   
-      File.open('assets/js/search-data.json', 'w') do |f|
+      File.open('assets/js/zzzz-search-data.json', 'w') do |f|
         f.puts '{
   {%- assign i = 0 -%}
-  {%- assign pages_array = \'\' | split: \'\' -%}
+  {%- assign pages_array = '' | split: '' -%}
   {%- assign pages_array = pages_array | push: site.html_pages -%}
   {%- if site.just_the_docs.collections -%}
     {%- for collection_entry in site.just_the_docs.collections -%}
