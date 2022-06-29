@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Geometry Model
+title: Geometry model
 nav_order: 4
 parent: Overview
 permalink: /docs/overview/geometry-model
 ---
 
-# Geometry Model
+# Geometry model
 {: .no_toc }
 
 ## Table of contents
@@ -15,27 +15,27 @@ permalink: /docs/overview/geometry-model
 1. TOC
 {:toc}
 
-## Design Principal
+## Design principal
 
-Molecular DNA was made to make it easy to define a DNA geometry, and then place it repeatedly to
+The molecularDNA application was made to make it easy to define a DNA geometry, and then place it repeatedly to
 model a complex geometry at large scales, as below.
 
 ![Placements for DNA Geometries]({{"assets/images/placements.png" | relative_url}})
 {: .text-center}
 
 
-There are two important notions when we define the geometry, *placement definitions* and the *geometry defintion*, often
+There are two important notions when we define the geometry, *placement definition* and the *geometry defintion*, often
 called the *fractal definition* as it is often seeded with a fractal.
 
-- *Placement Definition* defines the small scale structure of the simulation.
-- *Geometry Definition* defines the large scale structure of the simulation.
+- *Placement definition* defines the small scale structure of the simulation.
+- *Geometry definition* defines the large scale structure of the simulation.
 
 Some examples of how to make these files are available on [Github](https://github.com/natl/fractaldna), and examples can be 
-downloaded from the [Geometry Library]({{ "docs/geometry-library" | relative_url }})
+downloaded from the [Geometry library]({{ "docs/geometry-library" | relative_url }})
 
-## DNA Placements
+## DNA placements
 
-DNA Placements are the low level building block of the DNA geometry and show how the DNA sits in a given prism.
+DNA placements are the low level building block of the DNA geometry and show how the DNA sits in a given prism.
 
 A simple example of this is below, containing 14 base pairs (grey), alongside the sugar (red) and phosphate (yellow)
 molecules in the chain.
@@ -45,11 +45,11 @@ molecules in the chain.
 
 These files are specified as either 11 or 14 column ASCII text files with the schema below:
 
-- MOLECULE_NAME - Name of the molecule
-- SHAPE *Optional* - Shape of the molecule (Sphere or Ellipse)
-- CHAIN_ID - Index for the chain
-- STRAND_ID - Index for the strand (either left or right side of the DNA molecule)
-- BP_INDEX - Index of the base pair in the volume (per chain)
+- MOLECULE_NAME - name of the molecule
+- SHAPE *Optional* - shape of the molecule (sphere or ellipse)
+- CHAIN_ID - index for the chain
+- STRAND_ID - index for the strand (either left or right side of the DNA molecule)
+- BP_INDEX - index of the base pair in the volume (per chain)
 - SIZE_X *Optional* - semi-major x axis of ellipse (Å)
 - SIZE_Y *Optional* - semi-major y axis of ellipse (Å)
 - SIZE_Z *Optional* - semi-major z axis of ellipse (Å)
@@ -62,7 +62,7 @@ These files are specified as either 11 or 14 column ASCII text files with the sc
 
 Distances are specified in Angstrom, while angles are specified in radians (and correspond to the three Euler angles).
 
-### Specifying Molecule Sizes
+### Specifying molecule sizes
 
 The molecule size columns are optional, as they can either fall back onto the default sizes or be set to
 custom sizes in the macro definition via:
@@ -74,7 +74,7 @@ Note that molecule name matches are case insensitive.
 
 The default molecule names and sizes are:
 
-| Molecule Name | X semi-major axis (Å) | Y semi-major axis (Å) | Z semi-major axis (Å) |
+| Molecule name | X semi-major axis (Å) | Y semi-major axis (Å) | Z semi-major axis (Å) |
 |:--------------|----------------------:|----------------------:|----------------------:|
 | phosphate     | 2.282354              | 2.282354              | 2.282354              |
 | sugar         | 2.632140              | 2.632140              | 2.632140              |
@@ -104,11 +104,11 @@ when placement volumes are rotated along the lines of the image shown below.
 ![Index Counting]({{ "assets/images/two-strand-index-counting.png" | relative_url }}){: width="200px"}
 {: .text-center}
 
-### Defining DNA Placements
+### Defining DNA placements
 
 Placement files should be defined with either of the following two (space seperated) schemas:
 
-*Specifying Size for every molecule*
+*Specifying size for every molecule*
 ```
 NAME SHAPE CHAIN_ID STRAND_ID BP_INDEX SIZE_X SIZE_Y SIZE_Z POS_X POS_Y POS_Z ROT_X ROT_Y ROT_Z
 ```
@@ -118,10 +118,10 @@ NAME SHAPE CHAIN_ID STRAND_ID BP_INDEX SIZE_X SIZE_Y SIZE_Z POS_X POS_Y POS_Z RO
 NAME CHAIN_ID STRAND_ID BP_INDEX POS_X POS_Y POS_Z ROT_X ROT_Y ROT_Z
 ```
 
-Spatial units are *angstroms*, angles are in *radians*. Molecule names cannot contain spaces.
+Spatial units are *Angstroms*, angles are in *radians*. Molecule names cannot contain spaces.
 
 The program assumes that the file is ordered first by base pair, then strand, then chain as below,
-keeping the order Phosphate, Sugar then Base. Histones when specified can be placed anywhere in
+keeping the order phosphate, sugar then base. Histones when specified can be placed anywhere in
 the file however (they are often at the start or end).
 
 ```
@@ -149,7 +149,7 @@ Sugar             1        0         1
 Base              1        0         1
 ```
 
-The order Phosphate - Sugar - Base must always be kept. Each chain is
+The order phosphate - sugar - base must always be kept. Each chain is
 specified completely before a new chain starts, and base pair sections
 are specified in their entirety before a new base pair section is specified.
 
@@ -159,10 +159,10 @@ cutting of certain shapes within Geant4 so that each shape can be represented
 with the maximum volume possible.
 
 The program will assume the neighbouring molecules for a given sugar, phosphate or base are:
-* Base Pair, strand ID 0: Sugar at :-1, base at :+3, base at :-6
-* Base Pair, strand ID 1: Sugar at :-1, base at :-3, base at :-6
-* Sugar: Phosphate at L-1
-* Phosphate: Sugar at L+5
+* Base Pair, strand ID 0: sugar at :-1, base at :+3, base at :-6
+* Base Pair, strand ID 1: sugar at :-1, base at :-3, base at :-6
+* Sugar: phosphate at L-1
+* Phosphate: sugar at L+5
 
 Once defined, a placement volume can be loaded using the following command:
 ```
@@ -174,7 +174,7 @@ For example:
 ```
 
 
-### Considerations for Base Pairs
+### Considerations for base pairs
 
 When building the geometry, you'll probably consider a base pair in an unrotated space
 and then rotate the base pair to produce the chain you desire, as well as the standard
@@ -189,9 +189,9 @@ This assumption is used to help stop molecule placements intersecting each other
 geometries alongside the Python package [FractalDNA](http://github.com/natl/fractaldna), these
 changes should be done automatically.
 
-## Geometry Placements
+## Geometry placements
 
-The Geometry Definition files describe how the DNA placements should be put into the simulation world.
+The Geometry definition files describe how the DNA placements should be put into the simulation world.
 
 Often it will define tesselating cubes that join DNA together in a snake-like pattern, though it can also
 be used to place non-connected DNA elements (e.g. [this parameter study](https://www.sciencedirect.com/science/article/abs/pii/S1120179718300346)).
@@ -233,35 +233,3 @@ And could be loaded like this:
 /dnageom/definitionFile /path/to/definition.txt # or another path
 /dnageom/fractalScaling 50 50 50 nm  # scale each unit to 50 nm blocks
 ```
-
-## Physics and Chemistry Considerations
-
-Molecular DNA is a means of allowing geometries to interact with the
-physics and chemistry of Geant4 in a reliable way for DNA damage.
-
-Most of this is done through the [damage model]({{"docs/overview/damage-model" | relative_url }}), but there are some 
-implementation details in the geometry model.
-
-### Physics Cross Sections
-
-Inside each molecule in DNA's volume, we use the cross sections for
-that material rather than the cross section of water.
-
-Sometimes we shrink/cut these molecules in order to place them, which has
-an impact on the volume of the simulation which uses their cross-section, as below,
-where the red sugar and yellow phosphate molecules are cut so as not to overlap.
-
-![Image of cut molecules for Geant4 Placement]({{ "assets/images/dna-ogl.png" | relative_url }}){: width="350px"}
-{: .text-center}
-
-This has a very minimal impact on the actual physics of the simulation as the
-regions occupied by DNA are so small compared to the water region.
-
-### Parallel Worlds for Physics and Chemistry
-
-In the implementation, the physics geometry is implemented in a parallel world, while
-the chemistry executes in the primary Geant4 world which contains only water.
-
-This means the chemistry itself never needs to react with a DNA Geant4 geometry, as the DNA
-geometry is in the parallel world. Instead the chemistry interacts with the 
-DNA geometry via a seperate memory structure associated with the mother placement volume.

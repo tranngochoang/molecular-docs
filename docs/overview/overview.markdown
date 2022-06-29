@@ -6,10 +6,10 @@ has_children: true
 permalink: docs/overview
 ---
 
-# Molecular DNA Overview
+# molecularDNA Overview
 {: .no_toc }
 
-The MolecularDNA example is designed to allow anyone to simulate early
+The molecularDNA example is designed to allow anyone to simulate early
 DNA damage using only Geant4 macro commands - No C++ skills needed.
 
 The program takes inputs through the form of macro commands which define

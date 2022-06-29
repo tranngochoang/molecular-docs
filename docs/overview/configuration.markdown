@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuration Glossary
+title: Configuration glossary
 nav_order: 8
 parent: Overview
 permalink: docs/overview/configuration
@@ -9,7 +9,7 @@ permalink: docs/overview/configuration
 # Configuration
 {: .no_toc }
 
-The custom Geant4 commands available in the Molecular DNA application are listed here.
+The custom Geant4 commands available in the molecularDNA application are listed here.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -18,7 +18,7 @@ The custom Geant4 commands available in the Molecular DNA application are listed
 {:toc}
 
 
-## /analysisDNA
+## analysisDNA
 
 
 <table ><thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead><tbody><tr><td>analysisDNA/saveStrands</td><td>Bool to set whether strands ought be saved
@@ -36,7 +36,7 @@ Set to zero to score placement volumes independently
 
 
 
-## /cell
+## cell
 
 
 <table ><thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead><tbody><tr><td>cell/radiusSize</td><td>Set semi-major axes for cell (x, y, z) - unset, whole world is water
@@ -44,7 +44,7 @@ Set to zero to score placement volumes independently
 
 
 
-## /dnageom
+## dnageom
 
 
 <table ><thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead><tbody><tr><td>dnageom/placementVolume</td><td>Set a placement volume
@@ -64,7 +64,7 @@ The G4 default is 2
 
 
 
-## /world
+## world
 
 
 <table ><thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead><tbody><tr><td>world/worldSize</td><td>Side length for the world

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Repair Model
+title: Repair model
 nav_order: 7
 parent: Overview
 ---
-# Repair Model
+# Repair model
 
 This model calculates the accumulated proteins yield, by considering four principal DSB repair pathways. 
 
@@ -16,7 +16,7 @@ These pathways are [1]:
 
 The number of non-repairable DSB/Gy/cell is needed (NcDSB), as well as the number of DSBs that is more probable to be repaired (NncDSB). More analytically:
 
-![repair Model]({{"/assets/images/repairMode.png" | relative_url}})
+![repair model]({{"/assets/images/repairMode.png" | relative_url}})
 {: .text-center}
 
 
@@ -28,4 +28,4 @@ the way that DSBs are repaired.
 - a(L) is the slope coefficient of linear dose dependence that describes DSB induction per unit of dose (Gy−1/cell) and depends on LET. 
 
 ## Reference
-[1] D. Sakata, M. Suzuki, R. Hirayama, Y. Abe, M. Muramatsu, S. Sato, et al., "Performance Evaluation for Repair of HSGc-C5 Carcinoma Cell Using Geant4-DNA," Cancers, vol. 13, p. 6046, 2021.
+[1] Performance Evaluation for Repair of HSGc-C5 Carcinoma Cell Using Geant4-DNA, D. Sakata et al., Cancers, vol. 13, p. 6046, 2021.
