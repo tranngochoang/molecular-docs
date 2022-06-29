@@ -3,7 +3,7 @@ layout: default
 title: Parameter study
 nav_order: 1
 permalink: docs/examples/parameter-study
-parent: Available Geometries
+parent: Available geometries
 ---
 
 # Parameter study (cylinders.mac)
