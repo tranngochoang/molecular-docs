@@ -3,7 +3,7 @@ layout: default
 title: Human cell
 nav_order: 3
 permalink: docs/examples/human-cell
-parent: Available Geometries
+parent: Available geometries
 ---
 # Human cell (human_cell.mac)
 

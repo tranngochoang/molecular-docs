@@ -3,7 +3,7 @@ layout: default
 title: Bacterial cell
 nav_order: 2
 permalink: docs/examples/bacterial-cell
-parent: Available Geometries
+parent: Available geometries
 ---
 
 # Bacterial cell (ecoli.mac)
