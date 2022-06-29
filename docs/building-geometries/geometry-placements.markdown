@@ -3,7 +3,7 @@ layout: default
 title: Geometry placements
 nav_order: 2
 permalink: docs/geometry-library/geometry-placements
-parent: Building Geometries
+parent: Building geometries
 ---
 
 # Geometry placements
