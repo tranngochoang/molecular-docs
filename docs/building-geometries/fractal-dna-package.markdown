@@ -3,7 +3,7 @@ layout: default
 title: Fractal DNA package
 nav_order: 1
 permalink: docs/geometry-library/fractal-dna
-parent: Building Geometries
+parent: Building geometries
 ---
 
 # The FractalDNA package

@@ -83,10 +83,10 @@ Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) 
 for example: EaqStrandHits is e_aq + DNA backbone
 
 
-- **Damage yield (/Gy/Gbp)** is defined by DNA damage complexity (see [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}}))
+- **Damage yield (/Gy/Mbp)** is defined by DNA damage complexity (see [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}}))
 
 
-- **Breaks yield (/Gy/Gbp)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
+- **Breaks yield (/Gy/Mbp)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
 
 ![ecoli]({{"/assets/images/ecoli_Fra.png" | relative_url}})
 {: .text-left}
