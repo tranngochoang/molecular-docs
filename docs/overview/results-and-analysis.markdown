@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Results and Analysis
+title: Results and analysis
 permalink: /docs/overview/results-and-analysis
 nav_order: 6
 parent: Overview
@@ -11,7 +11,7 @@ parent: Overview
 <!-- END MathJax Import -->
 
 
-# Results and Analysis
+# Results and analysis
 {: .no_toc }
 
 
@@ -22,14 +22,14 @@ parent: Overview
 1. TOC
 {:toc}
 
-## Implementation Overview
+## Implementation overview
 
 As the simulation runs, it keeps track of three main elements in relation to DNA damage.
-- Energy depositions in each chromosome (To-do: Add track length)
-- Energy Depositions and track length in the cell (when specified)
-- DNA Damage in the DNA geometry
+- Energy depositions in each chromosome
+- Energy depositions and track length in the cell
+- DNA damage in the DNA geometry
 
-At the end of each event, the DNA Damage events are collected and analysed, reconstructing the
+At the end of each event, the DNA damage events are collected and analysed, reconstructing the
 damage pattern in the DNA and assigning it a complexity.
 
 In the damage model, a probability is assigned that certain events cause strand breaks
@@ -101,7 +101,7 @@ At the completion of the run, the following outputs are saved:
 
 
 
-## Damage Classification Model
+## Damage classification model
 
 ![damageScheme]({{"/assets/images/damageScheme.png" | relative_url}})
 {: .text-center}
@@ -117,10 +117,10 @@ geometry
   
 A python macro file is provided to modify ROOT output in SDD [2] file format:
 - createSDD.py : to use it, insert the command "python3 createSDD.py".
-                 If error with root, simply 
+                 If error with ROOT, simply 
                  source /path/to/root/bin/thisroot.(c)sh,
                  do "pip install pyroot" and try again.
 
 ## Reference
-1. Nikjoo, H., O’Neill, O., Goodhead, T., & Terrissol, M. 1997, Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, 71, 467
-2. A new standard DNA damage (SDD) data format, J. Schuemann, A. L. McNamara, J. W. Warmenhoven, N. T. Henthorn, K. Kirkby, M. J. Merchant, S. Ingram, H. Paganetti, K. D. Held, J. Ramos-Mendez, B. Faddegon, J. Perl, D. T. Goodhead, I. Plante, H. Rabus, H. Nettelbeck, W. Friedland, P. Kundrat, A. Ottolenghi, G. Baiocco, S. Barbieri, M. Dingfelder, S. Incerti, C. Villagrasa, M. Bueno, M. A. Bernal, S. Guatelli, D. Sakata, J. M. C. Brown, Z. Francis, I. Kyriakou, N. Lampe, F. Ballarini, M. P. Carante, M. Davidkova, V. Štěpan, X. Jia, F. A. Cucinotta, R. Schulte, R. D. Stewart, D. J. Carlson, S. Galer, Z. Kuncic, S. Lacombe, J. Milligan, S. H. Cho, G. Sawakuchi, T. Inaniwa, T. Sato, W. Li, A. V. Solov’yov, E. Surdutovich, M. Durante, K. Prise and S. J. McMahon, Rad. Res. 191 (2019) 76-92
+1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, H. Nikjoo et al. 1997 71, 467
+2. A new standard DNA damage (SDD) data format, J. Schuemann et al., Rad. Res. 191 (2019) 76-92

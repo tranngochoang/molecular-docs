@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Parameter Study
+title: Parameter study
 nav_order: 1
 permalink: docs/examples/parameter-study
 parent: Available Geometries
 ---
 
-# Parameter Studies (cylinders.mac)
+# Parameter study (cylinders.mac)
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -15,9 +15,9 @@ parent: Available Geometries
 {:toc}
 
 ## Overview
-The simulation geometry based upon a past parameter study[1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters. 
+The simulation geometry is based upon a past parameter study [1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters. 
 ## Geometry
-The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume. Radical kill distance [Damage Model]( {{ "docs/overview/damage-model" | relative_url }} )  was set to 9 nm, as well as the range for direct interaction was set to 7 A
+The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume. Radical kill distance [Damage model]( {{ "docs/overview/damage-model" | relative_url }} )  was set to 9 nm, as well as the range for direct interaction was set to 7 A.
 
 ```
 /world/worldSize 10200 nm
@@ -53,7 +53,7 @@ Primary electrons are generated randomly, with a random direction in a smaller 5
 /gps/pos/centre 0 0 0 nm
 /run/beamOn 1000000
 ```
-## Damage Model
+## Damage model
 Direct damage model uses the 17.5 eV for lower and upper break thresholds. 
 ```
 /dnadamage/directDamageLower 17.5 eV
@@ -72,13 +72,13 @@ Direct damage model uses the 17.5 eV for lower and upper break thresholds.
 /dnadamage/inductionEaqChance 0.00
 ```
 ## Results
-Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using cylinders.C macro file.
+Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using cylinders.C macro file.
 
 ![cylinders]({{"/assets/images/cylinders.png" | relative_url}})
 {: .text-left}
 
-Refer [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}}) for detail of source and complexity frequency.
+Refer [damage classification model]({{"/docs/overview/results-and-analysis" | relative_url}}) for detail of source and complexity frequency.
 
 
 ## Reference
-1. Nikjoo, H., O’Neill, O., Goodhead, T., & Terrissol, M. 1997, Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, 71, 467
+1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, Nikjoo et al. 1997, 71, 467.

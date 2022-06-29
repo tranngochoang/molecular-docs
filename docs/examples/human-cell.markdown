@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Human Cell
+title: Human cell
 nav_order: 3
 permalink: docs/examples/human-cell
 parent: Available Geometries
@@ -14,7 +14,7 @@ parent: Available Geometries
 {:toc}
 
 ## Overview
-DNA damage induced in a simplified human fibroblast cell was evaluated using the proposed changes and compared with experimental data. A large amount of memory and computer performance will be required for this example.
+DNA damage induced in a simplified human fibroblast cell can be simulated using the provided macro files. A large amount of memory and computer performance will be required for this example.
 ## Geometry
 This geometry consists of a continuous chain defined by taking a basic Hilbert curve. This fractal is broken into cubic regions of straight and turned chromatin sections [DNA placement]({{"/docs/geometry-library/dna-placements" | relative_url}}). This chain is included in an ellipsoid with semi-dimensions 7.1x2.5x7.1 μm, which imitates a cell nucleus. Only cubes that are completely included in the ellipsoid are considered as parts of the chain, which length is 6.4 Gbp. Bp density of the produced cell corresponds to ~0.015 bp/nm3.
 ```
@@ -56,7 +56,7 @@ A proton source plane with circle radius 7.1 um was located 3 μm from the cell 
 /gps/energy 0.4 MeV
 /run/beamOn 215
 ```
-## Damage Model
+## Damage model
 Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper break threshold. The probability of 40.5% for the production of strand break.
 ```
 /dnadamage/directDamageLower 5 eV
@@ -75,19 +75,19 @@ Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper bre
 /dnadamage/inductionEaqChance 0.00
 ```
 ## Results
-Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using human_cell.C macro file. 
+Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using human_cell.C macro file. 
 
 ![human_Cell]({{"/assets/images/human_cell_results.png" | relative_url}})
 {: .text-left}
 
-- **Species Hits (Gy-1 Mbp-1)** is defined by radical + DNA reactions, 
+- **Species Hits (/Gy/Mbp)** is defined by radical + DNA reactions, 
 for example: EaqStrandHits is e_aq + DNA backbone
 
 
-- **Damage yield (Gy-1 Gbp-1)** is defined by DNA damage complexity [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}})
+- **Damage yield (/Gy/Gbp)** is defined by DNA damage complexity (see [damage classification model]({{"/docs/overview/results-and-analysis" | relative_url}}))
 
 
-- **Breaks yield (Gy-1 Gbp-1)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
+- **Breaks yield (/Gy/Gbp)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
 
 ![human_Cell]({{"/assets/images/human_cell_Fra.png" | relative_url}})
 {: .text-left}

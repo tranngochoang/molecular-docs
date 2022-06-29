@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bacterial Cell
+title: Bacterial cell
 nav_order: 2
 permalink: docs/examples/bacterial-cell
 parent: Available Geometries
@@ -15,10 +15,10 @@ parent: Available Geometries
 {:toc}
 
 ## Overview
-This example that we investigated is the E. coli bacterium geometry, which imitates the genome of the bacterium.
+This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium.
 
 ## Geometry
-The genome has been produced using four side-by-side Hilbert curve fractals [fractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}}). This creates 16383 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 950 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. 
+The genome has been produced using four side-by-side Hilbert curve fractals (see [fractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}})). This creates 16383 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 950 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. 
 
 
 ```
@@ -54,8 +54,8 @@ Electrons are simulated coming from an ellipse enclosing the bacterial cell (of 
 /gps/energy 0.4 MeV
 /run/beamOn 200000
 ```
-## Damage Model
-Direct damage model uses the 17.5 eV for lower and upper break threshold. The probability of 40% for the production of strand break by OH (OH● + 2-deoxyribose) was applied.
+## Damage model
+Direct damage model uses the 17.5 eV for lower and upper break threshold. The probability of 40% for the production of strand break by OH (OH + 2-deoxyribose) was applied.
 ```
 /dnadamage/directDamageLower 17.5 eV
 /dnadamage/directDamageUpper 17.5 eV
@@ -74,19 +74,19 @@ Direct damage model uses the 17.5 eV for lower and upper break threshold. The pr
 ```
 
 ## Results
-Output [analysis]({{"docs/overview/results-and-analysis"| relative_url}}) is analysed by using ecoli.C macro file. 
+Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using ecoli.C macro file. 
 
 ![ecoli]({{"/assets/images/ecoli.png" | relative_url}})
 {: .text-left}
 
-- **Species Hits (Gy-1 Mbp-1)** is defined by radical + DNA reactions,
+- **Species hits (/Gy/Mbp)** is defined by radical + DNA reactions,
 for example: EaqStrandHits is e_aq + DNA backbone
 
 
-- **Damage yield (Gy-1 Gbp-1)** is defined by DNA damage complexity [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}})
+- **Damage yield (/Gy/Gbp)** is defined by DNA damage complexity (see [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}}))
 
 
-- **Breaks yield (Gy-1 Gbp-1)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
+- **Breaks yield (/Gy/Gbp)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
 
 ![ecoli]({{"/assets/images/ecoli_Fra.png" | relative_url}})
 {: .text-left}

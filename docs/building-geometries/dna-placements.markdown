@@ -1,26 +1,26 @@
 ---
 layout: default
-title: DNA Placements
+title: DNA placements
 nav_order: 2
 permalink: docs/geometry-library/dna-placements
-parent: Building Geometries
+parent: Building geometries
 ---
 
-# DNA Placements
+# DNA placements
 
-The DNA Placements here were built using the [FractalDNA]({{site.url}}/docs/geometry-library/fractal-dna)
+The DNA placements here were built using the [FractalDNA]({{site.url}}/docs/geometry-library/fractal-dna)
 package in Python. Accompanying each geometry is the Python code to
 generate it.
 
-## Single DNA Segments
+## Single DNA segments
 
-Straight and Turned Segments for a 50nm box.
+Straight and turned segments for a 50nm box.
 
-* Straight Segment ([link]({{"assets/csv/50nm_straight.csv" | relative_url}}))
-* Turned Segment ([link]({{"assets/csv/50nm_turn.csv" | relative_url}}))
-* Turned Segment with 90° rotation ([link]({{"assets/csv/50nm_turn_twist.csv" | relative_url}}))
+* Straight segment (see [link]({{"assets/csv/50nm_straight.csv" | relative_url}}))
+* Turned segment (see [link]({{"assets/csv/50nm_turn.csv" | relative_url}}))
+* Turned segment with 90° rotation (see [link]({{"assets/csv/50nm_turn_twist.csv" | relative_url}}))
 
-_Generating Code_
+_Generating code_
 ```
 from fractaldna.dna_models import dnachain
 import numpy as np
@@ -47,7 +47,7 @@ chain_turned_twisted.to_frame().to_csv('50nm_turn_twist.csv', sep=' ', index=Fal
 ```
 
 
-## Simple DNA Segments with multiple strands
+## Simple DNA segments with multiple strands
 
 Sometimes to make denser DNA, you will want to increase the amount of DNA in 
 a voxel.
@@ -58,11 +58,11 @@ a voxel.
 
 The following placements contain 4 parallel DNA strands.
 
-* Straight ([link]({{"assets/csv/50nm_4_straight.csv" | relative_url}}))
-* Turned ([link]({{"assets/csv/50nm_4_turn.csv" | relative_url}}))
-* Turned Twisted ([link]({{"assets/csv/50nm_4_turn_twist.csv" | relative_url}}))
+* Straight (see [link]({{"assets/csv/50nm_4_straight.csv" | relative_url}}))
+* Turned (see [link]({{"assets/csv/50nm_4_turn.csv" | relative_url}}))
+* Turned Twisted (see [link]({{"assets/csv/50nm_4_turn_twist.csv" | relative_url}}))
 
-_Generating Code_
+_Generating code_
 ```
 bp_separation  = dnachain.BP_SEPARATION  # 3.32Å
 side_length_nm = 50  # nm
@@ -91,7 +91,7 @@ chain4_turned.to_frame().to_csv('results/50nm_4_turn.csv', sep=' ', index=False)
 chain4_turned_twisted.to_frame().to_csv('results/50nm_4_turn_twist.csv', sep=' ', index=False)
 ```
 
-## Solenoidal DNA Segments
+## Solenoidal DNA segments
 
 You can also make solenoidal DNA.
 
@@ -105,7 +105,7 @@ The following placements contain Solenoidal DNA
 * Turned ([link]({{"assets/csv/solenoid_turned.csv" | relative_url}}))
 * Turned Twisted ([link]({{"assets/csv/solenoid_turned_twisted.csv" | relative_url}}))
 
-_Generating Code_
+_Generating code_
 
 ```
 from fractaldna.dna_models import dnachain
@@ -134,7 +134,7 @@ solenoid_turned.to_frame().to_csv('results/solenoid_turned.csv', sep=' ', index=
 solenoid_turned_twisted.to_frame().to_csv('results/solenoid_turned_twisted.csv', sep=' ', index=False)
 ```
 
-# Multiple Solenoidal Volumes
+# Multiple solenoidal volumes
 
 Here we make volumes that contain 4 solenoids:
 
@@ -142,13 +142,13 @@ Here we make volumes that contain 4 solenoids:
 ![]({{"assets/images/solenoid4_turned.jpg" | relative_url}}){: width="45%"}
 {: .text-center}
 
-The following placements contain Solenoidal DNA
+The following placements contain solenoidal DNA
 
 * Straight ([link]({{"assets/csv/solenoid4_straight.csv" | relative_url}}))
 * Turned ([link]({{"assets/csv/solenoid4_turned.csv" | relative_url}}))
-* Turned Twisted ([link]({{"assets/csv/solenoid4_turned_twisted.csv" | relative_url}}))
+* Turned twisted ([link]({{"assets/csv/solenoid4_turned_twisted.csv" | relative_url}}))
 
-_Generating Code_
+_Generating code_
 
 ```
 side_length = 1000 # angstrom

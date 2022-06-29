@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Molecular DNA Macro Files
+title: molecularDNA macro files
 nav_order: 0
 parent: Overview
 permalink: docs/overview/macro-anatomy
 ---
 
-# Molecular DNA Macro Files
+# molecularDNA macro files
 {: .no_toc }
 
-Macro files define simulations in Geant4. Molecular DNA contains a number of additional 
+Macro files define simulations in Geant4. The molecularDNA example contains a number of additional 
 commands that allow DNA damage simulations to take place. The full list of commands is written
 in [Configuration]({{ "/docs/overview/configuration" | relative_url }}).
 
@@ -19,7 +19,7 @@ in [Configuration]({{ "/docs/overview/configuration" | relative_url }}).
 1. TOC
 {:toc}
 
-## A Basic Macro File
+## A basic macro file
 
 Let's start with a basic macro file:
 
@@ -95,7 +95,7 @@ you can set the side length as below:
 /world/worldSize 3 um
 ```
 
-The world is entirely made of water unless you also specify a cell (by its semi-major axes).
+The world is entirely made of liquid water unless you also specify a cell (by its semi-major axes).
 ```
 /cell/radiusSize 1 1 0.5 um
 ```
@@ -105,13 +105,13 @@ Cells modify the default behavoiur by placing a water containing cell into a vac
 ![World with and without /cell command]({{"/assets/images/world.svg" | relative_url}})
 {: .text-center}
 
-## Set Up the Geometry
+## Set up the geometry
 
-There are two important notions when we define the geometry, *placement definitions* and the *geometry definition*, often
+There are two important notions when we define the geometry, *placement definition* and the *geometry definition*, often
 called the *fractal definition* as it is often seeded with a fractal.
 
-- *Placement Definition* defines the small scale structure of the simulation.
-- *Geometry Definition* defines the large scale structure of the simulation.
+- *Placement definition* defines the small scale structure of the simulation.
+- *Geometry definition* defines the large scale structure of the simulation.
 
 This is illustrated below, where turned and straight segments are used to build a horse-shoe shape:
 
@@ -147,11 +147,10 @@ This particular file handles the space in integer units, so that we can scale th
 /dnageom/fractalScaling 50 50 50 nm
 ```
 
-## Define the Chromosomes
+## Define the chromosomes
 
-In Molecular DNA, you can think of chromosomes as *regions of interest* for analysis. Currently, cylindrical, spherical and elliptical chromosome
-shapes can be defined, w
-hich are mapped onto the placement volumes defined by the large scale geometry.
+In the molecularDNA example, you can think of chromosomes as *regions of interest* for analysis. Currently, cylindrical, spherical and elliptical chromosome
+shapes can be defined, which are mapped onto the placement volumes defined by the large scale geometry.
 
 The below image shows, for example how two chromosomes can be defined to yield two regions of interest,
 overlaid on the grid which defines the overall geometry. Where chromosome regions overlap, energy depositions will
@@ -167,7 +166,7 @@ coerced to a circular form, by placing a spherical chromosome as we do here:
 /chromosome/add cell sphere 200 0 0 0 nm
 ```
 
-## Set up the Damage Model
+## Set up the damage model
 
 A number of parameters are used to determine how DNA damage works in the simulation.
 The first of these determine how the geometry in particular influences the simulation.
@@ -175,11 +174,11 @@ The first of these determine how the geometry in particular influences the simul
 /dnageom/radicalKillDistance 4 nm
 /dnageom/interactionDirectRange 6 angstrom
 ```
-The *Radical Kill Distance* tells the simulation to kill all chemistry tracks further than 4nm from the DNA.
+The *radical kill distance* tells the simulation to kill all chemistry tracks further than 4nm from the DNA.
 This parameter is an implicit bound on scavenging. It basically assumes all chemical radicals that need to diffuse
 4nm to react with the DNA will be scavenged before they are able to interact chemically with the DNA molecule.
 
-The *Direct Interaction Range* describes to what radius direct (physics-driven) energy depositions should be ascribed to
+The *direct interaction range* describes to what radius direct (physics-driven) energy depositions should be ascribed to
 a DNA molecule. Here, only energy depositions with 6Å can contribute a direct strand break.
 
 The next part of the damage model handles how direct strand breaks are calculated. The below snippet
@@ -190,8 +189,8 @@ defines a step function where a cumulative deposition of 17.5eV or more in one e
 ```
 The lower and upper values here describe a broken linear function where:
 
-* Energy Deposition below directDamageLower never causes a break
-* Energy Deposition above directDamageUpper always causes a break
+* Energy deposition below directDamageLower never causes a break
+* Energy deposition above directDamageUpper always causes a break
 * Between these bounds, the likelihood of a break rises uniformly
 
 An example of this, for a lower bound of 5eV and an upper bound of 37.5eV is shown below
@@ -206,7 +205,7 @@ Next, we define the likelihood of chemical damage occurring for different reacti
 /dnadamage/inductionOHChance 0.00
 ```
 Indirect damage here is what is typically discussed in most papers, it is the likelihood of a chemical
-reaction occurring between either OH (in this case) and either a base or strand molecule. A lot of research
+reaction occurring between either <sup>•</sup>OH (in this case) and either a base or strand molecule. A lot of research
 only considers reactions between radicals and strands as leading to strand breaks, and this simulation considers
 that all reactions between a strand and a radical cause a break.
 
@@ -214,7 +213,7 @@ On the other hand, it's rarely considered that an interaction between a radical 
 If, for whatever reason, you want to model this, you can use the induction chance. This is the probability that base damage
 leads to a strand break.
 
-For most simulations, all that is important are the Radical+Strand break chances, which are set by:
+For most simulations, all that is important are the radical + strand break chances, which are set by:
 ```
 /dnadamage/indirectOHStrandChance 0.4
 /dnadamage/indirectHStrandChance 0.4

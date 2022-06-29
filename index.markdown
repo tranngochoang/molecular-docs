@@ -5,21 +5,21 @@
 layout: default
 title: Home
 nav_order: 1
-description: Molecular DNA allows easy simulation of radiation-induced DNA damage with flexible geometries damage parameters.
+description: molecularDNA allows easy simulation of radiation-induced DNA damage with flexible geometries damage parameters.
 permalink: /
 ---
 
-# Molecular DNA
+# molecularDNA
 {: .fs-9 }
 
 Radiation-induced DNA damage simulations in Geant4.
 {: .fs-6 .fw-300 }
 
-Molecular DNA is a Geant4-DNA example built to allow easy simulation of
+molecularDNA is a Geant4-DNA example built to allow easy simulation of
 radiation-induced DNA damage with *flexible geometries* and well defined
 *damage parameters*.
 
-Get started right away in *geant4/example/extended/medical/dna/moleculardna* with a *library of pre-existing geometries*,
+Get started right away in *geant4/examples/extended/medical/dna/moleculardna* with a *library of pre-existing geometries*,
 or dive into the documentation.
 
 ![humanCell]({{"/assets/images/humanCell.png" | relative_url}})

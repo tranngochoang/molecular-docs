@@ -7,7 +7,7 @@ nav_order: 4
 # Running the example
 {: .no_toc }
 
-Geant4.11.1beta or higher is requested [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }}). 
+Geant4.11.1beta or higher is required (see [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }})). 
 
 To build the example:
 
@@ -24,8 +24,8 @@ To run the example:
 ./molecular -m cylinders.mac -t 2 -p 2
 ```
 
--m : macro file [Available Geometries]({{ "/docs/examples/parameter-study" | relative_url }})
+-m : macro file (see [available geometries]({{ "/docs/examples/parameter-study" | relative_url }}))
 
 -t : number of threads to run
 
--p : physics list option [physics model]({{ "/docs/overview/physics-model" | relative_url }})
+-p : physics constructor option (see [physics model]({{ "/docs/overview/physics-model" | relative_url }})-
