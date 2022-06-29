@@ -8,13 +8,13 @@ parent: Building geometries
 
 # Geometry placements
 
-The Geometry Placements here were built using the [FractalDNA]({{site.url}}/docs/geometry-library/fractal-dna)
+The geometry placements here were built using the [FractalDNA]({{site.url}}/docs/geometry-library/fractal-dna)
 package in Python. Accompanying each geometry is the Python code to
 generate it.
 
 These geometries are based on iterating a fractal [L-string](https://en.wikipedia.org/wiki/L-system).
 
-## Square Geometry
+## Square geometry
 
 A square geometry can be easily generated using the `X` fractal seed.
 
@@ -52,7 +52,7 @@ vf.center_fractal()
 vf.to_frame().to_csv(f'results/fractal-X-{nn}-centred.csv', index=False, sep=' ')
 ```
 
-## Rectangular Geometry
+## Rectangular geometry
 
 A square geometry can be easily generated using the `XFXFX` fractal seed.
 
@@ -117,7 +117,7 @@ are identical to those in the source geometry (left)
 {: .text-center}
 
 
-## Generating Random Placements
+## Generating random placements
 
 
 It can be useful to generate randomised volumes for testing a simulation. 
