@@ -101,9 +101,9 @@ You can also make solenoidal DNA.
 
 The following placements contain Solenoidal DNA
 
-* Straight ([link]({{"assets/csv/solenoid_straight.csv" | relative_url}}))
-* Turned ([link]({{"assets/csv/solenoid_turned.csv" | relative_url}}))
-* Turned Twisted ([link]({{"assets/csv/solenoid_turned_twisted.csv" | relative_url}}))
+* Straight (see [link]({{"assets/csv/solenoid_straight.csv" | relative_url}}))
+* Turned (see [link]({{"assets/csv/solenoid_turned.csv" | relative_url}}))
+* Turned Twisted (see [link]({{"assets/csv/solenoid_turned_twisted.csv" | relative_url}}))
 
 _Generating code_
 
@@ -144,9 +144,9 @@ Here we make volumes that contain 4 solenoids:
 
 The following placements contain solenoidal DNA
 
-* Straight ([link]({{"assets/csv/solenoid4_straight.csv" | relative_url}}))
-* Turned ([link]({{"assets/csv/solenoid4_turned.csv" | relative_url}}))
-* Turned twisted ([link]({{"assets/csv/solenoid4_turned_twisted.csv" | relative_url}}))
+* Straight (see [link]({{"assets/csv/solenoid4_straight.csv" | relative_url}}))
+* Turned (see [link]({{"assets/csv/solenoid4_turned.csv" | relative_url}}))
+* Turned twisted (see [link]({{"assets/csv/solenoid4_turned_twisted.csv" | relative_url}}))
 
 _Generating code_
 

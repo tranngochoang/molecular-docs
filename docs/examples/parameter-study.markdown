@@ -81,4 +81,4 @@ Refer [damage classification model]({{"/docs/overview/results-and-analysis" | re
 
 
 ## Reference
-1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, Nikjoo et al. 1997, 71, 467.
+1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, Nikjoo et al.,International Journal of Radiation Biology, 1997, 71, 467.

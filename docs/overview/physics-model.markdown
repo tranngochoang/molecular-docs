@@ -15,4 +15,4 @@ Geant4-DNA Monte-Carlo track-structure code describes spatial distribution of en
 
 G4EmDNAPhysics_option2, G4EmDNAPhysics_option4 or G4EmDNAPhysics_option6 constructors are recommended to use in the molecularDNA example. 
 
-Please refer [Geant4-DNA]({{ "http://geant4-dna.in2p3.fr/styled-3/styled-8/index.html" | relative_url }}) for details
+Please refer [Geant4-DNA]({{ "http://geant4-dna.in2p3.fr/styled-3/styled-8/index.html" | relative_url }}) for details.

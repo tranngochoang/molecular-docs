@@ -74,5 +74,5 @@ To print reactions
 ```
 ## Reference 
 1. Modeling radiation chemistry in the Geant4 toolkit, M. Karamitros et al., Prog. Nucl. Sci. Tec. 2 (2011) 503-508.
-2. Geant4-DNA simulation of the pre-chemical stage of water radiolysis and its impact on initial radiochemical yields, W.-G. Shin et al., Phys. Med. 88 (2021) 86-90.
-3. Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution, Buxton GV et al. J Phys Chem Ref Data. 1988;17:513–886.
+2. Geant4-DNA simulation of the pre-chemical stage of water radiolysis and its impact on initial radiochemical yields, W.-G. Shin et al., Phys. Med. 88, 2021, 86-90.
+3. Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution, Buxton GV et al., J. Phys. Chem. Ref. Data. 1988, 17,513–886.

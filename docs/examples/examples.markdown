@@ -10,5 +10,5 @@ nav_order: 3
 {: .no-toc}
 
 The available DNA geometries are controlled by macro files included in molecularDNA. 
-Associated pre-existing geometry files can be automatically downloaded when the application is built (see [Running from source]({{"/docs/source" | relative_url}})). 
+Associated pre-existing geometry files can be automatically downloaded when the application is built (see [Running from the example]({{"/docs/source" | relative_url}})). 
 

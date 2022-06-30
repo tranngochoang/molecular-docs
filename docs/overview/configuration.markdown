@@ -26,7 +26,7 @@ use /analysisDNA/strandDir to set location
 </td><td><ol><li> (bool, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>analysisDNA/strandDir</td><td>Directory to save DNA damage fragments
 </td><td><ol><li>DNA fragments (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>analysisDNA/fragmentGap</td><td>Gap between DNA fragments in base pairs.
 Set to zero to score placement volumes independently
-</td><td><ol><li>Base Pair gap (int, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>analysisDNA/diagnosticChain</td><td>Save the position of hits histos only on one chain
+</td><td><ol><li>Base Pair gap (int, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>analysisDNA/diagnosticChain</td><td>Save the position of hits histones only on one chain
 </td><td><ol><li>Chain Index (int, Default: Not Set, Omittable: True)</li></ol></td></tr><tr><td>analysisDNA/dsbDistance</td><td>Max separation of DSBs. Must be less than 31.
 </td><td><ol><li>Max. DSB distance. (int, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>analysisDNA/testClassifier</td><td>Run unit test for break classification
 

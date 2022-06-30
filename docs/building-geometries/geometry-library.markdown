@@ -11,5 +11,5 @@ permalink: docs/building-geometries
 
 Here you'll find geometries that can be used with the molecularDNA example.
 If you want to make new geometries, you can start with the FractalDNA tools
-which are accessible on Github, or read about our [Geometry Model]({{ "docs/overview/geometry-model" | relative_url }}).
+which are accessible on github, or read about our [geometry model]({{ "docs/overview/geometry-model" | relative_url }}).
 

@@ -24,7 +24,7 @@ model a complex geometry at large scales, as below.
 {: .text-center}
 
 
-There are two important notions when we define the geometry, *placement definition* and the *geometry defintion*, often
+There are two important notions when we define the geometry, *placement definition* and the *geometry definition*, often
 called the *fractal definition* as it is often seeded with a fractal.
 
 - *Placement definition* defines the small scale structure of the simulation.
@@ -46,13 +46,13 @@ molecules in the chain.
 These files are specified as either 11 or 14 column ASCII text files with the schema below:
 
 - MOLECULE_NAME - name of the molecule
-- SHAPE *Optional* - shape of the molecule (sphere or ellipse)
+- SHAPE *optional* - shape of the molecule (sphere or ellipse)
 - CHAIN_ID - index for the chain
 - STRAND_ID - index for the strand (either left or right side of the DNA molecule)
 - BP_INDEX - index of the base pair in the volume (per chain)
-- SIZE_X *Optional* - semi-major x axis of ellipse (Å)
-- SIZE_Y *Optional* - semi-major y axis of ellipse (Å)
-- SIZE_Z *Optional* - semi-major z axis of ellipse (Å)
+- SIZE_X *optional* - semi-major x axis of ellipse (Å)
+- SIZE_Y *optional* - semi-major y axis of ellipse (Å)
+- SIZE_Z *optional* - semi-major z axis of ellipse (Å)
 - POS_X - x position in volume (Å)
 - POS_Y - y position in volume (Å)
 - POS_Z - z position in volume (Å)
@@ -197,7 +197,7 @@ Often it will define tesselating cubes that join DNA together in a snake-like pa
 be used to place non-connected DNA elements (e.g. [this parameter study](https://www.sciencedirect.com/science/article/abs/pii/S1120179718300346)).
 
 Three control parameters are useful when placing the geometry:
-- `/analysisDNA/fragmentGap 0` will treat all placements as seperate, preventing any joining between strands.
+- `/analysisDNA/fragmentGap 0` will treat all placements as separate, preventing any joining between strands.
 - `/dnageom/setVoxelPlacementAnglesAsMultiplesOfPi` will load the Euler angles for placement volumes as multiples of pi.
 - `/dnageom/fractalScaling X Y Z nm` will scale the distances in the geometry file by the values specified.
   - e.g. `/dnageom/fractalScaling 1 1 1 nm` will mean that the geometry file is in units of nm.

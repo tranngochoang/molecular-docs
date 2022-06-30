@@ -16,4 +16,4 @@ The program takes inputs through the form of macro commands which define
 the geometry, damage model, physics, chemistry and run conditions for the
 simulation until principal DSB repair pathways.
 
-If you are entirely new to this, the best place to start is looking at the [Anatomy of a Macro File]( {{ "/docs/overview/macro-anatomy" | relative_url }} ).
+If you are entirely new to this, the best place to start is looking at the [molecularDNA macro files]( {{ "/docs/overview/macro-anatomy" | relative_url }} ).
