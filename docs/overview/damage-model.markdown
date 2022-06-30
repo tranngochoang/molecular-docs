@@ -73,7 +73,7 @@ Each probability is defined through the macro interface as below :
 Base damage is modelled through a similar interface, though two steps are provided for the modelling of both
 base damage generally, and also strand break induction (while this might seem redundant, it was coded for a level of flexibility).
 
-For a given base, we can consider seperately the likelihood that
+For a given base, we can consider separately the likelihood that
 the chemical reaction between the base and the radical
 causes damage to the base pair, and the likelihood it causes a strand break.
 In the case of $$\ce{^{\bullet}OH}$$ `/dnadamage/indirectOHBaseChance 0.5` would

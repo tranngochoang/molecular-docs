@@ -120,7 +120,7 @@ are identical to those in the source geometry (left)
 ## Generating random placements
 
 
-It can be useful to generate randomised volumes for testing a simulation. 
+It can be useful to generate randomised volumes for testing a simulation (see [parameter study]({{ "/docs/examples/parameter-study" | relative_url }})). 
 This was the subject of [this article](https://doi.org/10.1016/j.ejmp.2018.02.011).
 
 To generate a randomised volume, the `fractaldna.structure_models.random_placements`

@@ -111,7 +111,7 @@ Breaks in a DNA segment are classified both by complexity (left) and source (rig
 
 Several ROOT macro files are provided in the analysis directory:
 - cylinders.C : to plot damage from cylinders geometry
-- ecoli.C : to plot damage from ecoli geometry
+- ecoli.C : to plot damage from e.coli geometry
 - human_cell.C : to plot damage and fragments distribution from human_cell
 geometry
   
@@ -122,5 +122,5 @@ A python macro file is provided to modify ROOT output in SDD [2] file format:
                  do "pip install pyroot" and try again.
 
 ## Reference
-1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, International Journal of Radiation Biology, H. Nikjoo et al. 1997 71, 467
+1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al.,International Journal of Radiation Biology, 1997, 71, 467
 2. A new standard DNA damage (SDD) data format, J. Schuemann et al., Rad. Res. 191 (2019) 76-92

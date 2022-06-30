@@ -11,7 +11,7 @@ permalink: docs/overview/macro-anatomy
 
 Macro files define simulations in Geant4. The molecularDNA example contains a number of additional 
 commands that allow DNA damage simulations to take place. The full list of commands is written
-in [Configuration]({{ "/docs/overview/configuration" | relative_url }}).
+in [configuration]({{ "/docs/overview/configuration" | relative_url }}).
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -105,7 +105,7 @@ Cells modify the default behavoiur by placing a water containing cell into a vac
 ![World with and without /cell command]({{"/assets/images/world.svg" | relative_url}})
 {: .text-center}
 
-## Set up the geometry
+## Set up the DNA geometry
 
 There are two important notions when we define the geometry, *placement definition* and the *geometry definition*, often
 called the *fractal definition* as it is often seeded with a fractal.
