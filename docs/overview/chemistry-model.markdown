@@ -11,7 +11,7 @@ parent: Overview
 
 # Pre-chemical stage
 
-The energy transfer induced by ionizing radiation in a water medium occurs rapidly (on a scale of femtoseconds (fs)) during the physical stage of water radiolysis and is followed by the formation of radiolytic species. 
+The energy transfer induced by ionizing radiation in a water medium occurs rapidly (on a scale of femtoseconds (fs)) during the physical stage of water radiolysis and is followed by the formation of radiolysis species. 
 These species are created in a very short time (from femtoseconds (fs) to picoseconds (ps)), mainly through electronic events during the pre-chemical stage. 
 These events—such as thermalization, solvation of sub-excitation electrons, electronic hole migration, and fast electronic recombination— can lead to chemical bond breaks and produce species. 
 
@@ -34,7 +34,7 @@ The IRT method is based on the “Independent Pair Approximation”; thus, react
 While this is a considerable advantage in terms of computing time, the spatial–temporal information of the system is not simulated explicitly. As a complementary extension, synchronous IRT (or IRT-syn) implementation calculates a time step using IRT method for the next reaction that should occur. The reactive products created in this reaction and the remaining molecules are considered explicitly together to diffuse for the time step. Then, based on their new positions, the new random reaction times are re-evaluated sequentially for all the radicals in the system and the new minimum reaction time and corresponding reaction is selected for next time step. This procedure is repeated until the end time of simulation.
 
 ## Reaction rates between free radicals and DNA
-Indirect damage occurs from the chemical reaction between a radical and a DNA molecule (see the table below). To induce indirect strand breaks, the chemical reaction occurs between the •OH radical and the 2-deoxyribose-phosphate group. The probablities to induce a single strand break are described in the
+Indirect damage occurs from the chemical reaction between a radical and a DNA molecule (see the table below). To induce indirect strand breaks, the chemical reaction occurs between the •OH radical and the 2-deoxyribose-phosphate group. The probabilities to induce a single strand break are described in the
 [Indirect Damage]( {{ "docs/overview/damage-model" | relative_url }} ) through `DamageModel` class.
 
 | Reaction                                  | Reaction rate (109 M-1s-1)[3] |

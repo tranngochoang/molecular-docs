@@ -77,8 +77,8 @@ Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) 
 ![cylinders]({{"/assets/images/cylinders.png" | relative_url}})
 {: .text-left}
 
-Refer [damage classification model]({{"/docs/overview/results-and-analysis" | relative_url}}) for detail of source and complexity frequency.
+Refer [classification model]({{"/docs/overview/results-and-analysis" | relative_url}}) for detail of source and complexity frequency.
 
 
 ## Reference
-1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, Nikjoo et al.,International Journal of Radiation Biology, 1997, 71, 467.
+1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, Nikjoo et al.,Int. J. Rad. Bio., 1997, 71, 467.
