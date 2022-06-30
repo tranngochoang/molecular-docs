@@ -12,7 +12,7 @@ nav_order: 5
 - Mechanistic DNA Damage Simulations in Geant4-DNA Part 2: Electron and Proton Damage in a Bacterial Cell, N. Lampe et al., Phys. Med. 48 (2018) 146-155 : [link]({{ "https://doi.org/10.1016/j.ejmp.2017.12.008" | relative_url }})
 - Mechanistic DNA Damage Simulations in Geant4-DNA Part 1: A parameter study in a simplified geometry, N. Lampe et al., Phys. Med. 48 (2018) 135-145 : [link]({{ "https://doi.org/10.1016/j.ejmp.2018.02.011" | relative_url }})
 
-Find more in [Geant4-DNA projet]({{ "http://geant4-dna.in2p3.fr/styled-2/index.html" | relative_url }})
+Find more in [Geant4-DNA project]({{ "http://geant4-dna.in2p3.fr/styled-2/index.html" | relative_url }})
 
 # Authors (in alphabetical order)
 
