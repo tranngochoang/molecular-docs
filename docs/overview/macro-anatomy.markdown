@@ -84,7 +84,7 @@ That's a lot to digest. But we can break down the macro file into a few componen
 1. Define the damage model
 1. Set up the beam
 1. Set any analysis rules
-1. Run the simulation!
+1. Run the simulation
 
 ## Set up the world
 
@@ -100,7 +100,7 @@ The world is entirely made of liquid water unless you also specify a cell (by it
 /cell/radiusSize 1 1 0.5 um
 ```
 
-Cells modify the default behavoiur by placing a water containing cell into a vacuum-filled world.
+Cells modify the default behaviour by placing a water containing cell into a vacuum-filled world.
 
 ![World with and without /cell command]({{"/assets/images/world.svg" | relative_url}})
 {: .text-center}

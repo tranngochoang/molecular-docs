@@ -18,7 +18,7 @@ parent: Available geometries
 This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium.
 
 ## Geometry
-The genome has been produced using four side-by-side Hilbert curve fractals (see [fractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}})). This creates 16383 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 950 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. 
+The genome has been produced using four side-by-side Hilbert curve fractals (see [FractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}})). This creates 16383 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 950 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. 
 
 
 ```
@@ -83,7 +83,7 @@ Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) 
 for example: EaqStrandHits is e_aq + DNA backbone
 
 
-- **Damage yield (/Gy/Mbp)** is defined by DNA damage complexity (see [Damage Classification Model]({{"/docs/overview/results-and-analysis" | relative_url}}))
+- **Damage yield (/Gy/Mbp)** is defined by DNA damage complexity (see [classification model]({{"/docs/overview/results-and-analysis" | relative_url}}))
 
 
 - **Breaks yield (/Gy/Mbp)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
