@@ -91,6 +91,12 @@ but assume these don't lead to SSBs. This requires the following settings for al
 /dnadamage/inductionOHChance 0.00
 ```
 
+## Damage classification model
+
+![damageScheme]({{"/assets/images/damageScheme.png" | relative_url}})
+{: .text-center}
+
+Breaks in a DNA segment are classified both by complexity (left) and source (right) [1] . The model entails two parameters, dDSB is the maximum separation between two damage sites on alternate sides of a DNA strand for us to consider that a DSB has occurred (typically dDSB = 10 bp). ds is the distance between two damage sites for us to consider that the damage events should be considered as two separate breakages (yielding two separate segments that need classification). Whilst many of the classifications are clear, we note that a DSB+ requires a DSB and at least one additional break within a ten base pair separation, while a DSB++ requires at least two DSBs along the segment, regardless of whether they are within dDSB of each other or not. For break complexity, the most complex break type is always chosen. When classifying breaks by source, we pay attention not to all damage along the strand, but to the damage which causes DSBs only. DSBs from only indirect sources are classified as DSBi, and those only from direct sources are classified as DSBd. DSBhyb is distinguished from DSBm, as DSBhyb requires that the DSB not occur in the absence of indirect damage. Otherwise, a break caused by indirect and direct sources is classified as DSBm. Where a segment contains both indirect and direct DSBs, it is classified as DSBm. Similarly, when a segment contains a DSB classified as DSBhyb in conjunction with a direct DSB or mixed DSB, it takes the DSBm classification, otherwise it keeps the classification DSBhyb.
 
 ## Radical scavenging
 

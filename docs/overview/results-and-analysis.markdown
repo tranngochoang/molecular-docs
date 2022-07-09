@@ -36,7 +36,7 @@ In the damage model, a probability is assigned that certain events cause strand 
 (i.e. $$ Pr(\ce{e^{-}_{aq}} + \mathrm{Sugar} \rightarrow \mathrm{SSB}) $$). These conditions
 are tested at the end of each event when the analysis runs to determine the damage that occurs.
 
-At the completion of the run, the following outputs are saved:
+At the completion of the run, the following outputs in a ROOT file are saved:
 
 ### Histograms
 
@@ -100,20 +100,25 @@ At the completion of the run, the following outputs are saved:
   26. Name
 
 
-
-## Damage classification model
-
-![damageScheme]({{"/assets/images/damageScheme.png" | relative_url}})
-{: .text-center}
-
-Breaks in a DNA segment are classified both by complexity (left) and source (right) [1] . The model entails two parameters, dDSB is the maximum separation between two damage sites on alternate sides of a DNA strand for us to consider that a DSB has occurred (typically dDSB = 10 bp). ds is the distance between two damage sites for us to consider that the damage events should be considered as two separate breakages (yielding two separate segments that need classification). Whilst many of the classifications are clear, we note that a DSB+ requires a DSB and at least one additional break within a ten base pair separation, while a DSB++ requires at least two DSBs along the segment, regardless of whether they are within dDSB of each other or not. For break complexity, the most complex break type is always chosen. When classifying breaks by source, we pay attention not to all damage along the strand, but to the damage which causes DSBs only. DSBs from only indirect sources are classified as DSBi, and those only from direct sources are classified as DSBd. DSBhyb is distinguished from DSBm, as DSBhyb requires that the DSB not occur in the absence of indirect damage. Otherwise, a break caused by indirect and direct sources is classified as DSBm. Where a segment contains both indirect and direct DSBs, it is classified as DSBm. Similarly, when a segment contains a DSB classified as DSBhyb in conjunction with a direct DSB or mixed DSB, it takes the DSBm classification, otherwise it keeps the classification DSBhyb.
 ## Analysis files
 
-Several ROOT macro files are provided in the analysis directory:
+In multithreading mode, ROOT data files (molecular-dna_t*.root) associated with the threads are created. [ROOT6.x]( {{ "https://root.cern/install/" | relative_url }} ) should be installed to analyse these ROOT data files. 
+
+Several ROOT macro files are provided to join the ROOT data files into an unique ROOT data file (molecular-dna.root) and analyse the results:
 - cylinders.C : to plot damage from cylinders geometry
 - ecoli.C : to plot damage from e.coli geometry
 - human_cell.C : to plot damage and fragments distribution from human_cell
 geometry
+
+```
+root cylinders.C
+```
+
+User can also join the ROOT files (molecular-dna_t*.root) using the following command :
+
+```
+hadd -O -f molecular-dna.root molecular-dna_t*.root
+```
   
 A python macro file is provided to modify ROOT output in SDD [2] file format:
 - createSDD.py : to use it, insert the command "python3 createSDD.py".
