@@ -31,7 +31,7 @@ called the *fractal definition* as it is often seeded with a fractal.
 - *Geometry definition* defines the large scale structure of the simulation.
 
 Some examples of how to make these files are available on [Github](https://github.com/natl/fractaldna), and examples can be 
-downloaded from the [Geometry library]({{ "docs/geometry-library" | relative_url }})
+found from the [Available geometries]({{ "docs/examples" | relative_url }})
 
 ## DNA placements
 
