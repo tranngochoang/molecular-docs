@@ -8,7 +8,7 @@ parent: Building geometries
 
 # Geometry placements
 
-The geometry placements here were built using the [FractalDNA]({{site.url}}/docs/geometry-library/fractal-dna)
+The geometry placements here were built using the [FractalDNA package]({{"/docs/geometry-library/fractal-dna" | relative_url}})
 package in Python. Accompanying each geometry is the Python code to
 generate it.
 
