@@ -52,7 +52,7 @@ A proton source plane with circle radius 7.1 um was located 3 μm from the cell 
 /gps/pos/radius 7100 nm
 /gps/direction 0 -1 0
 /gps/particle  proton
-/analysisDNA/fileName 50MeV
+/analysisDNA/fileName 400keV
 /gps/energy 0.4 MeV
 /run/beamOn 215
 ```
