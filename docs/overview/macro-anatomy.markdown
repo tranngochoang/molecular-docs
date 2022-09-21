@@ -165,6 +165,16 @@ coerced to a circular form, by placing a spherical chromosome as we do here:
 ```
 /chromosome/add cell sphere 200 0 0 0 nm
 ```
+The chromosome shape is sphere. The radius 200. The position :  0 0 0. The unit: nm nanometer.
+
+The arguments for a cylinder are:
+- name cyl radius height x y z unit
+- name cyl radius height x y z unit rx ry rz (rotations)
+
+The arguments for a ellipse are:
+- name ellipse sx sy sz x y z unit
+- name ellipse sx sy sz x y z unit rx ry rz
+Note that dimensions (sx, sy, sz) are semi-major axes and rotations are in degrees.
 
 ## Set up the damage model
 
