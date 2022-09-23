@@ -15,7 +15,7 @@ permalink: /docs/overview/geometry-model
 1. TOC
 {:toc}
 
-## Design principal
+## Design principle
 
 The molecularDNA application was made to make it easy to define a DNA geometry, and then place it repeatedly to
 model a complex geometry at large scales, as below.
