@@ -14,6 +14,8 @@ parent: Available geometries
 1. TOC
 {:toc}
 
+**A bug has been identified in the implementation of the E. coli geometry. Investigations are on-going. Users are suggested not to use this beta version and to wait for an update of molecularDNA**
+
 ## Overview
 This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium.
 
