@@ -5,7 +5,7 @@ nav_order: 5
 ---
 
 # Publications
-
+This beta version of molecularDNA is based on the following previous works and is currently being further developed.
 - A Geant4-DNA evaluation of radiation-induced DNA damage on a human fibroblast, W.-G. Shin et al., Cancers 13 (2021) 4940 : [link]({{ "https://www.mdpi.com/2072-6694/13/19/4940" | relative_url }})
 - Full integrated Monte Carlo simulation for evaluating radiation induced DNA damage and following repair using Geant4-DNA, D.Sakata et al., Sc. Rep. 10 (2020) 20788 : [link]({{ "https://www.nature.com/articles/s41598-020-75982-x" | relative_url }})
 - Evaluation of early radiation DNA damage in a fractal cell nucleus model using Geant4-DNA, D. Sakata et al., Phys. Med. 62 (2019) 152-157 : [link]({{ "https://doi.org/10.1016/j.ejmp.2019.04.010" | relative_url }})
