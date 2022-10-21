@@ -66,6 +66,7 @@ The aspect ratio will be:
 - and so on as the seed changes.
 
 - Download `XFXFX` iterated 2 times ([link]({{"assets/csv/fractal-XFXFX-2-centred.csv" | relative_url}}))
+- Download `XFXFX` iterated 3 times ([link]({{"assets/csv/fractal-XFXFX-3-centred.csv" | relative_url}}))
 - Download `XFXFX` iterated 4 times ([link]({{"assets/csv/fractal-XFXFX-4-centred.csv" | relative_url}}))
 
 ```
