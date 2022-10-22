@@ -120,7 +120,7 @@ chain8_straight = dnachain.EightStrandDNAChain(
 )
 
 chain8_turned = dnachain.EightStrandDNAChain(
-    "".join(np.random.choice(["G", "A", "T", "C"], num_basepairs_straight)),
+    "".join(np.random.choice(["G", "A", "T", "C"], num_basepairs_turned)),
     strand_separation_1,
     strand_separation_2,
     turn=True,
@@ -128,7 +128,7 @@ chain8_turned = dnachain.EightStrandDNAChain(
 )
 
 chain8_turned_twisted = dnachain.EightStrandDNAChain(
-    "".join(np.random.choice(["G", "A", "T", "C"], num_basepairs_straight)),
+    "".join(np.random.choice(["G", "A", "T", "C"], num_basepairs_turned)),
     strand_separation_1,
     strand_separation_2,
     turn=True,
