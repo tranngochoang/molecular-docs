@@ -96,6 +96,6 @@ for example: EaqStrandHits is e_aq + DNA backbone
 
 ## Important note
 
-- The chemistry and physics models used since the 2018 [publication]({{"https://doi.org/10.1016/j.ejmp.2017.12.008"| relative_url}})) of this model have evolved significantly, making comparison to past works difficult. 
-- Further, an issue was identified in the geometry implementation of the 2018 work that is now addressed in this preliminary [erratum]({{"assets/csv/erratum-2018.pdf" | relative_url}}). Please also noe tha the authors mistakenly wrote microns to describe the length of the cell, when the unit actually used (correctly) was nanometers.
+- The chemistry and physics models used since the 2018 [publication]({{"https://doi.org/10.1016/j.ejmp.2017.12.008"| relative_url}}) of this model have evolved significantly, making comparison to past works difficult. 
+- Further, an issue was identified in the geometry implementation of the 2018 work that is now addressed in this preliminary [erratum]({{"assets/csv/erratum-2018.pdf" | relative_url}}) and it has been fixed in Geant4. Please also note that the authors mistakenly wrote microns to describe the length of the cell, when the unit actually used (correctly) was nanometers.
 
