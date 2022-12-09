@@ -17,10 +17,10 @@ parent: Available geometries
 **IMPORTANT : This is a preliminary version that may contains bugs.**
 
 ## Overview
-This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium.
+This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium. _The configuration has been modified from its original version in response to a bug identified following the publication of the beta version_.
 
 ## Geometry
-The genome has been produced using four side-by-side Hilbert curve fractals (see [FractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}})). This creates 16383 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 950 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. 
+The genome has been produced using four side-by-side Hilbert curve fractals (see [FractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}})). This creates 16,384 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 900 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium containing 4,864 placement volumes. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. 
 
 
 ```
@@ -34,9 +34,11 @@ The genome has been produced using four side-by-side Hilbert curve fractals (see
 /dnageom/fractalScaling 50 50 50 nm
 
 /dnageom/definitionFile geometries/bacteria-XFXFXFX-4.txt
-/dnageom/placementVolume turn geometries/4strands_50nm_turn.txt
-/dnageom/placementVolume turntwist geometries/4strands_50nm_turn.txt true
-/dnageom/placementVolume straight geometries/4strands_50nm_straight.txt
+/dnageom/placementVolume turn geometries/8strands_50nm_turn.txt
+/dnageom/placementVolume turntwist geometries/8strands_50nm_turn.txt true
+/dnageom/placementVolume straight geometries/8strands_50nm_straight.txt
+
+/chromosome/add bacteria ellipse 900 400 400 0 0 0 nm 0 0 0
 ```
 
 ![ecoli]({{"/assets/images/ecoliImage.png" | relative_url}})
@@ -48,7 +50,7 @@ Electrons are simulated coming from an ellipse enclosing the bacterial cell (of 
 /gps/pos/type Surface
 /gps/pos/shape Ellipsoid
 /gps/pos/centre 0 0 0 nm
-/gps/pos/halfx 950 nm
+/gps/pos/halfx 900 nm
 /gps/pos/halfy 400 nm
 /gps/pos/halfz 400 nm
 /gps/ang/type cos

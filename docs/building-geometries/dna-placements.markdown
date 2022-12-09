@@ -56,6 +56,10 @@ a voxel.
 ![]({{"assets/images/50nm_4_turn.png" | relative_url}}){: width="45%"}
 {: .text-center}
 
+![]({{"assets/images/50nm_8_straight.png" | relative_url}}){: width="45%"}
+![]({{"assets/images/50nm_8_turn.png" | relative_url}}){: width="45%"}
+{: .text-center}
+
 The following placements contain 4 parallel DNA strands.
 
 * Straight (see [link]({{"assets/csv/50nm_4_straight.csv" | relative_url}}))
@@ -90,6 +94,55 @@ chain4_straight.to_frame().to_csv('results/50nm_4_straight.csv', sep=' ', index=
 chain4_turned.to_frame().to_csv('results/50nm_4_turn.csv', sep=' ', index=False)
 chain4_turned_twisted.to_frame().to_csv('results/50nm_4_turn_twist.csv', sep=' ', index=False)
 ```
+
+The following placements contain 8 parallel DNA strands.
+
+* Straight (see [link]({{"assets/csv/50nm_8_straight.csv" | relative_url}}))
+* Turned (see [link]({{"assets/csv/50nm_8_turn.csv" | relative_url}}))
+* Turned Twisted (see [link]({{"assets/csv/50nm_8_turn_twist.csv" | relative_url}}))
+
+_Generating code_
+```
+%%capture
+bp_separation = dnachain.BP_SEPARATION  # 3.32Å
+side_length_nm = 50  # nm
+num_basepairs_straight = int(side_length_nm / (0.1 * bp_separation))
+num_basepairs_turned = int((side_length_nm * np.pi / 4.0) / (0.1 * bp_separation))
+strand_separation_1 = 100  # angstroms
+strand_separation_2 = 250  # angstroms
+
+chain8_straight = dnachain.EightStrandDNAChain(
+    "".join(np.random.choice(["G", "A", "T", "C"], num_basepairs_straight)),
+    strand_separation_1,
+    strand_separation_2,
+    turn=False,
+    twist=False
+)
+
+chain8_turned = dnachain.EightStrandDNAChain(
+    "".join(np.random.choice(["G", "A", "T", "C"], num_basepairs_turned)),
+    strand_separation_1,
+    strand_separation_2,
+    turn=True,
+    twist=False
+)
+
+chain8_turned_twisted = dnachain.EightStrandDNAChain(
+    "".join(np.random.choice(["G", "A", "T", "C"], num_basepairs_turned)),
+    strand_separation_1,
+    strand_separation_2,
+    turn=True,
+    twist=True
+)
+
+chain8_straight.to_frame().to_csv("results/50nm_8_straight.csv", sep=" ", index=False)
+chain8_turned.to_frame().to_csv("results/50nm_8_turn.csv", sep=" ", index=False)
+chain8_turned_twisted.to_frame().to_csv(
+    "results/50nm_8_turn_twist.csv", sep=" ", index=False
+)
+```
+
+
 
 ## Solenoidal DNA segments
 

@@ -27,8 +27,8 @@ A square geometry can be easily generated using the `X` fractal seed.
 - Download with 4 iterations ([link]({{"assets/csv/fractal-X-4-centred.csv" | relative_url}}))
 - Download with 5 iterations ([link]({{"assets/csv/fractal-X-5-centred.csv" | relative_url}}))
 - Download with 6 iterations ([link]({{"assets/csv/fractal-X-6-centred.csv" | relative_url}}))
-- Download with 7 iterations ([link](https://sandbox.zenodo.org/record/1075682/files/fractal-X-7-centred.csv.zip?download=1))
-- Download with 8 iterations ([link](https://sandbox.zenodo.org/record/1075682/files/fractal-X-8-centred.csv.zip?download=1))
+- Download with 7 iterations ([link](https://zenodo.org/record/6658889/files/fractal-X-7-centred.csv.zip?download=1))
+- Download with 8 iterations ([link](https://zenodo.org/record/6658889/files/fractal-X-8-centred.csv.zip?download=1))
 
 ```
 # Start with the initial L-String X for a Hilbert Curve
@@ -66,6 +66,7 @@ The aspect ratio will be:
 - and so on as the seed changes.
 
 - Download `XFXFX` iterated 2 times ([link]({{"assets/csv/fractal-XFXFX-2-centred.csv" | relative_url}}))
+- Download `XFXFX` iterated 3 times ([link]({{"assets/csv/fractal-XFXFX-3-centred.csv" | relative_url}}))
 - Download `XFXFX` iterated 4 times ([link]({{"assets/csv/fractal-XFXFX-4-centred.csv" | relative_url}}))
 
 ```
