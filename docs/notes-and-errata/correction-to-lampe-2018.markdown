@@ -1,10 +1,4 @@
----
-layout: default
-title: Correction to Lampe 2018
-permalink: docs/notes-and-errata/correction-to-lampe-2018
-nav_order: 1
-parent: Notes and Errata
----
+
 
 <!-- Need to import MathJax for this post -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
