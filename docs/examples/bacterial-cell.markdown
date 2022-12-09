@@ -5,6 +5,10 @@ nav_order: 2
 permalink: docs/examples/bacterial-cell
 parent: Available geometries
 ---
+<!-- Need to import MathJax for this post -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- END MathJax Import -->
 
 # Bacterial cell (ecoli.mac)
 
@@ -13,6 +17,7 @@ parent: Available geometries
 
 1. TOC
 {:toc}
+
 
 **IMPORTANT : This is a preliminary version that may contains bugs.**
 
@@ -100,4 +105,3 @@ for example: EaqStrandHits is e_aq + DNA backbone
 
 - The chemistry and physics models used since the 2018 [publication]({{"https://doi.org/10.1016/j.ejmp.2017.12.008"| relative_url}}) of this model have evolved significantly, making comparison to past works difficult. 
 - Further, an issue was identified in the geometry implementation of the 2018 work that is now addressed in this preliminary [erratum]({{"assets/csv/erratum-2018.pdf" | relative_url}}) and it has been fixed in Geant4. Please also note that the authors mistakenly wrote microns to describe the length of the cell, when the unit actually used (correctly) was nanometers.
-
