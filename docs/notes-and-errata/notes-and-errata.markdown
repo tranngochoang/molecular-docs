@@ -1,10 +1,4 @@
----
-layout: default
-title: Notes and Errata
-permalink: docs/notes-and-errata
-has_children: true
-nav_order: 6
----
+
 
 # Notes and Errata
 {: .no-toc}
