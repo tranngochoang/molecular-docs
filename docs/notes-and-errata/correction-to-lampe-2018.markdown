@@ -9,8 +9,7 @@
 
 **NOTE: These corrections are produced using the same chemistry as in the
 [the original work](https://doi.org/10.1016/j.ejmp.2017.12.008) from 2018.
-Since this time, the chemistry and physics models have been updated so more recent simulations
-will not produce these results.**
+Since this time, the Geant4 chemistry and physics models have been updated, more recent simulations will not produce these results.**
 
 As part of the process of preparing for the open source release of this geometry, 
 an error was noted in Lampe et al.'s [2018 work](https://doi.org/10.1016/j.ejmp.2017.12.008).
@@ -24,9 +23,8 @@ DNA region with an ellipsoidal source, as below:
 The mathematics in the paper however assumed the ellipsoidal cell shape as described in
 the work, resulting in an increase of the density of DNA modelled from the true value
 of $$3.81\ \text{Mbp}\ \mu \text{m}^{-3}$$ to 
-$$7.277\ \text{Mbp}\ \mu \text{m}^{-3}$$. The consequence of this 
-is that in general, the damage yields in thr paper are around 52% of their true
-value.
+$$7.277\ \text{Mbp}\ \mu \text{m}^{-3}$$. The consequence of this is that in general, the damage 
+yields in the 2018 work are around 52% of their true value.
 
 ### Correction Geometries
 
@@ -68,7 +66,7 @@ actually produce reasonably similar damage yields:
 
 Compared to the original paper, the results which only consider radical activity within the hydration
 shell of DNA (radical kill distance of 1nm) provide a better match to experimental results,
-while the 4nm kill distance vastly overstates damage.
+while the 4nm kill distance overstates damage.
 
 The original study results are shown here 
 (see Figure 7 [herein](https://doi.org/10.1016/j.ejmp.2017.12.008)),
