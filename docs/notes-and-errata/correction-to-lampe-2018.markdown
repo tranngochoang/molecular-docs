@@ -6,6 +6,11 @@ nav_order: 1
 parent: Notes and Errata
 ---
 
+<!-- Need to import MathJax for this post -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- END MathJax Import -->
+
 ## Correction to 2018 Publication
 
 **NOTE: These corrections are produced using the same chemistry as in the
@@ -24,8 +29,8 @@ DNA region with an ellipsoidal source, as below:
 
 The mathematics in the paper however assumed the ellipsoidal cell shape as described in
 the work, resulting in an increase of the density of DNA modelled from the true value
-of $$3.81 \text{Mbp}\ \mu \text{m}^{-3}$$ to 
-$$7.277\times 10^{15}\ \text{Mbp}\ \mu \text{m}^{-3}$$. The consequence of this 
+of $$3.81\ \text{Mbp}\ \mu \text{m}^{-3}$$ to 
+$$7.277\ \text{Mbp}\ \mu \text{m}^{-3}$$. The consequence of this 
 is that in general, the damage yields in thr paper are around 52% of their true
 value.
 
@@ -36,7 +41,7 @@ To explore this, we have created three geometries to investigate the consequence
 _Correct Geometry_
 
 This is what should have been simulated in our 2018 paper. The density of DNA in this
-simulation is $$7.67\times 10^{15}\ \text{Mbp}\ \text{L}^{-1}$$, and the ellipsoid
+simulation is $$7.67\ \text{Mbp}\ \mu\text{m}^{-3}$$, and the ellipsoid
 is a little smaller. The version available in the public release of Geant4-DNA uses this geometry.
 
 ![Corrected Geometry]({{"/assets/images/corrected-geometry.png" | relative_url}}){: width="60%"}
