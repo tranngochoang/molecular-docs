@@ -18,7 +18,8 @@ parent: Available geometries
 1. TOC
 {:toc}
 
-**IMPORTANT : a bug has been identified in the original implementation of the E. coli geometry which impacted past published results.See [here](#correction-to-2018-publication)**
+
+**IMPORTANT : This is a preliminary version that may contains bugs.**
 
 ## Overview
 This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium. _The configuration has been modified from its original version in response to a bug identified following the publication of the beta version_.
@@ -100,13 +101,7 @@ for example: EaqStrandHits is e_aq + DNA backbone
 {: .text-left}
 *Fragments distribution of DNA. A fragment is defined by a distance between two DSBs.*
 
+## Important note
 
-## Note to 2018 work
-
-The chemistry and physics models used since the 2018 publication of this model have evolved
-significantly, making comparison to past works difficult. Further, an issue was identified
-in the geometry implementation in the initial 2018 publication that is addressed in 
-[this errata]({{ "/docs/notes-and-errata/correction-to-lampe-2018" | relative_url }}).
-
-Please also note that in the 2018 work, the author mistakenly wrote $$\mu\mathrm{m}$$
-to describe the length of the cell, when the unit actually used (correctly) was nanometres.
+- The chemistry and physics models used since the 2018 [publication]({{"https://doi.org/10.1016/j.ejmp.2017.12.008"| relative_url}}) of this model have evolved significantly, making comparison to past works difficult. 
+- Further, an issue was identified in the geometry implementation of the 2018 work that is now addressed in this preliminary [erratum]({{"assets/csv/erratum-2018.pdf" | relative_url}}) and it has been fixed in Geant4. Please also note that the authors mistakenly wrote microns to describe the length of the cell, when the unit actually used (correctly) was nanometers.
