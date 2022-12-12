@@ -4,19 +4,23 @@ title: Survival model
 nav_order: 8
 parent: Overview
 ---
-# Survival model
+# Survival function
 
-The survival fraction is calculated based on the function:
+The survival fraction (SF) is calculated based on the function:
 
 ![survival model]({{"/assets/images/survivalEquation.png" | relative_url}})
 {: .text-center}
 
-L_{1}$$(t) is the number of lesions per cell in the fast-repair process at a given time t after the beginning of the irradiation procedure. L2(t) is the number of lesions per cell in the slow-repair process at a given time t. Lf(t) is the number of lethal lesions that may lead to cell death at time t. D(t) is the dose rate, Y is the size of the cell in Giga base pairs (Gbps). Σ1 corresponds to the number of simple DSB, while Σ2 corresponds to the number of irreparable damage (complex DSB - NcDSB).
+- L1(t) is the number of lesions per cell in the fast-repair process at a given time t after the beginning of the irradiation procedure.
+- L2(t) is the number of lesions per cell in the slow-repair process at a given time t. 
+- Lf(t) is the number of lethal lesions that may lead to cell death at time t. 
+
 This model includes:
 - Repair probability coefficients, which represent the rate of rejoined lesions (λ and η), and
 - Lethality probability coefficients, which represent the probability that a residual lesion may lead to cell death (β and γ).
   More specifically, λ1, λ2, and η correspond to fast-, slow-, and binary-rejoining processes, respectively (expressed in h-1). Similarly, β1, β2, and γ correspond accordingly to each rejoining process.
 
+The two-lesion kinetics (TLK) model includes kinetic processes of fast- and slow- DNA repair, and, based on lethal DNA damage, it can calculate the SF of a cell population
 
 # User guide
 To run the code, users need to open a terminal in the folder containing the molecularDNArepair.py
@@ -26,17 +30,26 @@ python3 molecularDNAsurvival.py
 ```
 
 Input Parameters
-- In line 13, users need to set the name of the output file, which is print in text format.
-  outputFile = "molecularDNAsurvival.txt"
-- In line 14, users need to set the name of the input file, which for the current version is in root format. A future update of moleculardna will include the option for using SDD files.
-  iRootFile  = "../molecular-dna.root"
-- In line 18, users need to define the dimensions of the cell (x, y, z) in meters.
-  r3 = 7100*1e-09 * 2500*1e-09 * 7100*1e-09
-- In line 19, users need to define the length (in bp) of the DNA molecule model included in the simulation. The length of the DNA included in the “human cell” example is 6405886128 bp.
-  NBP = 6405886128
-- In line 20, the code calculates the mass of the cell used in the simulation. If another cell shape has been defined, other than the ellipsoid, the user needs to modify this calculation.
-  mass = 997 * 4 * 3.141592 * r3 / 3
-
+In line 13, users need to set the name of the output file, which is print in text format.
+```
+outputFile = "molecularDNAsurvival.txt"
+```
+In line 14, users need to set the name of the input file, which for the current version is in root format. A future update of moleculardna will include the option for using SDD files.
+```
+iRootFile  = "../molecular-dna.root"
+```
+In line 18, users need to define the dimensions of the cell (x, y, z) in meters.
+```
+r3 = 7100*1e-09 * 2500*1e-09 * 7100*1e-09
+```
+In line 19, users need to define the length (in bp) of the DNA molecule model included in the simulation. The length of the DNA included in the “human cell” example is 6405886128 bp.
+```
+NBP = 6405886128
+```
+In line 20, the code calculates the mass of the cell used in the simulation. If another cell shape has been defined, other than the ellipsoid, the user needs to modify this calculation.
+```
+mass = 997 * 4 * 3.141592 * r3 / 3
+```
 
 Model Parameters
 
@@ -70,4 +83,5 @@ Definition of the name of the cells. It is just a name for the output.
 cell  = "test"
 ```
 
-[1] Stewart RD. Radiat Res. 2001 https://pubmed.ncbi.nlm.nih.gov/11554848/ 
+## Reference
+[1] Two-lesion kinetic model of double-strand break rejoining and cell killing, Stewart RD. Radiat Res. 2001
