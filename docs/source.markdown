@@ -7,7 +7,7 @@ nav_order: 4
 # Running the example
 {: .no_toc }
 
-Geant4.11.1beta or higher is required (see [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }})). 
+Geant4.11.1 or higher is required (see [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }})). 
 
 To build the example:
 
@@ -28,4 +28,4 @@ To run the example:
 
 -t : number of threads to run
 
--p : physics constructor option (see [physics model]({{ "/docs/overview/physics-model" | relative_url }})-
+-p : physics constructor option (see [physics model]({{ "/docs/overview/physics-model" | relative_url }})
