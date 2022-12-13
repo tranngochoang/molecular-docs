@@ -32,13 +32,10 @@ This geometry consists of a continuous chain defined by taking a basic Hilbert c
 /dnageom/placementVolume turntwist geometries/turned_twisted_solenoid_750_withHistone.txt true
 /dnageom/placementVolume straight geometries/straight_solenoid_750_withHistone.txt
 ```
-![human_Cell]({{"/assets/images/human_cell.png" | relative_url}})
+The DNA model in the simulation.
+
+![human_Cell]({{"/assets/images/humanCell_irradiation.png" | relative_url}})
 {: .text-right}
-
-The DNA model in the simulation. 
-
-![human_Cell]({{"/assets/images/humanCell01.jpg" | relative_url}})
-{: .text-left}
 
 Left: The 3D geometry of the cell nucleus ( 14.2μm x 14.2μm x 5μm ) used in this macro file, showing the continuous fractal interior. Right: The beam geometry used in the simulation, showing the incident protons as a parallel beam.
 ## Particle source

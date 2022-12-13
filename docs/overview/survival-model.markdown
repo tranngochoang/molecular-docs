@@ -6,8 +6,8 @@ parent: Overview
 ---
 # Survival function
 
-To estimate the surviving fraction (SF) of specific cells, the two-lesion kinetics (TLK) model proposed by Stewart et al. [1] was utilized in this study. 
-The TLK model includes kinetic processes of fast- and slow- DNA repair, and, based on lethal DNA damage, it can calculate the SF of a cell population. 
+To estimate the surviving fraction (SF) of specific cells, the two-lesion kinetics (TLK) model proposed by Stewart et al. [1] was utilized in this study.
+The TLK model includes kinetic processes of fast- and slow- DNA repair, and, based on lethal DNA damage, it can calculate the SF of a cell population.
 It must be stated that multiple-lesion repairs mechanism may lead to complex aberrations due to incorrect rejoining.
 
 The SF is calculated based on the function:
@@ -16,8 +16,8 @@ The SF is calculated based on the function:
 {: .text-center}
 
 - L1(t) is the number of lesions per cell in the fast-repair process at a given time t after the beginning of the irradiation procedure.
-- L2(t) is the number of lesions per cell in the slow-repair process at a given time t. 
-- Lf(t) is the number of lethal lesions that may lead to cell death at time t. 
+- L2(t) is the number of lesions per cell in the slow-repair process at a given time t.
+- Lf(t) is the number of lethal lesions that may lead to cell death at time t.
 
 This model includes:
 - Repair probability coefficients, which represent the rate of rejoined lesions (λ and η), and
@@ -28,7 +28,7 @@ The two-lesion kinetics (TLK) [1] model includes kinetic processes of fast- and 
 
 # User guide
 To run the code, users need to open a terminal in the folder repair_survival_models containing the molecularDNAsurvival.py
-Then, 
+Then,
 ```
 python3 molecularDNAsurvival.py
 ```
