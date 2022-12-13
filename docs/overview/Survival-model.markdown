@@ -8,8 +8,6 @@ parent: Overview
 
 To estimate the surviving fraction (SF) of specific cells, the two-lesion kinetics (TLK) model proposed by Stewart et al. [1] was utilized in this study. 
 The TLK model includes kinetic processes of fast- and slow- DNA repair, and, based on lethal DNA damage, it can calculate the SF of a cell population. 
-Both repair mechanisms consider simple rejoining of damaged base pairs at the same position and are described by the term L(t). 
-This model also includes multiple-lesion repairs (second-order repairs), which are expressed by $$text{L}^{2}(t)$$. 
 It must be stated that multiple-lesion repairs mechanism may lead to complex aberrations due to incorrect rejoining.
 
 The SF is calculated based on the function:
@@ -24,12 +22,12 @@ The SF is calculated based on the function:
 This model includes:
 - Repair probability coefficients, which represent the rate of rejoined lesions (λ and η), and
 - Lethality probability coefficients, which represent the probability that a residual lesion may lead to cell death (β and γ).
-  More specifically, λ1, λ2, and η correspond to fast-, slow-, and binary-rejoining processes, respectively (expressed in h-1). Similarly, β1, β2, and γ correspond accordingly to each rejoining process.
+  More specifically, λ1, λ2, and η correspond to fast-, slow-, and binary-rejoining processes, respectively (expressed in \(hour^-1)\)). Similarly, β1, β2, and γ correspond accordingly to each rejoining process.
 
-The two-lesion kinetics (TLK) [2] model includes kinetic processes of fast- and slow- DNA repair, and, based on lethal DNA damage, it can calculate the SF of a cell population
+The two-lesion kinetics (TLK) [1] model includes kinetic processes of fast- and slow- DNA repair, and, based on lethal DNA damage, it can calculate the SF of a cell population
 
 # User guide
-To run the code, users need to open a terminal in the folder containing the molecularDNArepair.py
+To run the code, users need to open a terminal in the folder repair_survival_models containing the molecularDNAsurvival.py
 Then, 
 ```
 python3 molecularDNAsurvival.py
@@ -75,7 +73,7 @@ Normalization factor to define the true size of the cell used in the simulation
 ```
 bp      = NBP_of_cell/NBP  
 ```      
-Definition of the parameters values λ1, λ2, β1, β2, γ, η. The following values correspond to the output implemented in Chatzipapas et al. (prec rad oncol, 2022, doi:….)
+Definition of the parameters values λ1, λ2, β1, β2, γ, η. The following values correspond to the output implemented in [2].
 ```
 gamma = 0.189328
 Lamb1 = 0.0125959
@@ -90,5 +88,6 @@ cell  = "test"
 ```
 
 ## Reference
-[1] Two-lesion kinetic model of double-strand break rejoining and cell killing, Stewart RD. Radiat Res. 2001
+[1] Two-lesion kinetic model of double-strand break rejoining and cell killing, Stewart RD. Radiat Res. 2001.
+
 [2] Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, Chatzipapas KP, et al. Prec Rad Onc 2022 Dec., submitted

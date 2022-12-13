@@ -28,7 +28,7 @@ the way that DSBs are repaired.
 - a(L) is the slope coefficient of linear dose dependence that describes DSB induction per unit of dose (Gy−1/cell) and depends on LET. 
 
 # User guide
-To run the code, users need to open a terminal in the folder containing the molecularDNArepair.py
+To run the code, users need to open a terminal in the folder repair_survival_models containing the molecularDNArepair.py
 
 Then, 
 
