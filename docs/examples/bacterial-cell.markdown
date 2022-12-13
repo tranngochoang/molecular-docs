@@ -18,9 +18,6 @@ parent: Available geometries
 1. TOC
 {:toc}
 
-
-**IMPORTANT : This is a preliminary version that may contains bugs.**
-
 ## Overview
 This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium. _The configuration has been modified from its original version in response to a bug identified following the publication of the beta version_.
 
