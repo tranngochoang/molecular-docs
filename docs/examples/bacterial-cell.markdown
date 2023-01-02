@@ -27,6 +27,9 @@ The genome has been produced using four side-by-side Hilbert curve fractals (see
 
 ```
 /world/worldSize 8 um
+
+/scheduler/endTime 1 us
+
 /dnageom/setSmartVoxels 1
 
 /dnageom/radicalKillDistance 4 nm
