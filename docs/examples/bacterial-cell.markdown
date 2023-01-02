@@ -27,7 +27,7 @@ The genome has been produced using four side-by-side Hilbert curve fractals (see
 
 ```
 /world/worldSize 8 um
-/dnageom/setSmartVoxels 20
+/dnageom/setSmartVoxels 1
 
 /dnageom/radicalKillDistance 4 nm
 /dnageom/interactionDirectRange 6 angstrom
@@ -57,8 +57,8 @@ Electrons are simulated coming from an ellipse enclosing the bacterial cell (of 
 /gps/pos/halfz 400 nm
 /gps/ang/type cos
 /gps/particle e-
-/gps/energy 0.4 MeV
-/run/beamOn 200000
+/gps/energy 9.999 keV
+/run/beamOn 50000
 ```
 ## Damage model
 Direct damage model uses the 17.5 eV for lower and upper break threshold. The probability of 40% for the production of strand break by OH (OH + 2-deoxyribose) was applied.
@@ -68,7 +68,7 @@ Direct damage model uses the 17.5 eV for lower and upper break threshold. The pr
 
 /dnadamage/indirectOHBaseChance 1.0
 /dnadamage/indirectOHStrandChance 0.4
-/dnadamage/inductionOHChance 0.05
+/dnadamage/inductionOHChance 0.
 
 /dnadamage/indirectHBaseChance 1.0
 /dnadamage/indirectHStrandChance 0.4
@@ -82,7 +82,7 @@ Direct damage model uses the 17.5 eV for lower and upper break threshold. The pr
 ## Results
 Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using ecoli.C macro file. 
 
-![ecoli]({{"/assets/images/ecoli.png" | relative_url}})
+![ecoli]({{"/assets/images/ecoliDamage.png" | relative_url}})
 {: .text-left}
 
 - **Species hits (/Gy/Mbp)** is defined by radical + DNA reactions,
@@ -94,7 +94,7 @@ for example: EaqStrandHits is e_aq + DNA backbone
 
 - **Breaks yield (/Gy/Mbp)** is showed for each break type (direct SSB, indirect SSB, DSB,...).
 
-![ecoli]({{"/assets/images/ecoli_Fra.png" | relative_url}})
+![ecoli]({{"/assets/images/ecoliFrag.png" | relative_url}})
 {: .text-left}
 *Fragments distribution of DNA. A fragment is defined by a distance between two DSBs.*
 
