@@ -23,6 +23,8 @@ The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000
 /world/worldSize 10200 nm
 /cell/radiusSize 3 3 3 um
 
+/scheduler/endTime 1 us
+
 /dnageom/setSmartVoxels 1
 /dnageom/checkOverlaps false
 
