@@ -38,6 +38,11 @@ The DNA model in the simulation.
 {: .text-right}
 
 Left: The 3D geometry of the cell nucleus ( 14.2μm x 14.2μm x 5μm ) used in this macro file, showing the continuous fractal interior. Right: The beam geometry used in the simulation, showing the incident protons as a parallel beam.
+
+The chromosome as regions of interest for analysis is defined: 
+```
+/chromosome/add cell ellipse 7100 2500 7100 0 0 0 nm 0 0 0
+```
 ## Particle source
 A proton source plane with circle radius 7.1 um was located 3 μm from the cell center. 
 ```
@@ -54,7 +59,7 @@ A proton source plane with circle radius 7.1 um was located 3 μm from the cell 
 /run/beamOn 215
 ```
 ## Damage model
-Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper break threshold. The probability of 40.5% for the production of strand break.
+Direct damage model set the 5 eV for lower break threshold and 37.5 eV upper break threshold. A probability of 40.5% is set for the production of strand break.
 ```
 /dnadamage/directDamageLower 5 eV
 /dnadamage/directDamageUpper 37.5 eV
