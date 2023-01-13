@@ -16,3 +16,8 @@ Geant4-DNA Monte-Carlo track-structure code describes spatial distribution of en
 G4EmDNAPhysics_option2, G4EmDNAPhysics_option4 or G4EmDNAPhysics_option6 constructors are recommended to use in the molecularDNA example. 
 
 Please refer [Geant4-DNA]({{ "http://geant4-dna.in2p3.fr/styled-3/styled-8/index.html" | relative_url }}) for details.
+
+**Important note for Geant4 11.1**: The DNA geometry was defined as being composed of
+DNA materials, for which the current public version of “molecularDNA”
+(release Geant4 11.1) does not include cross sections, meaning that **no physical interactions
+are simulated within the DNA volumes**. 
