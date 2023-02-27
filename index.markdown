@@ -22,7 +22,7 @@ radiation-induced DNA damage with *flexible geometries* and well defined
 Get started right away in *geant4/examples/extended/medical/dna/moleculardna* with a *library of pre-existing geometries*,
 or dive into the documentation. 
 
- <span style="color:red">**Important** : This version of molecularDNA (Geant4 11.1) is proposed as a **beta** version and may still contain bugs, thank you for your understanding. Please contact us for further detail. This example is for demonstration purpose and acts as an introductory tool to help users create their own applications; therefore users are advised to adapt the parameters in their applications accordingly.</span>
+ <span style="color:red">**Important** : This version of molecularDNA (Geant4 11.1+patch01) is proposed as a **beta** version and may still contain bugs, thank you for your understanding. Please contact us for further detail. This example is for demonstration purpose and acts as an introductory tool to help users create their own applications; therefore users are advised to adapt the parameters in their applications accordingly.</span>
 
 ![humanCell]({{"/assets/images/humanCell.png" | relative_url}})
 {: .text-center}

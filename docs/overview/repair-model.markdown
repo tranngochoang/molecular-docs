@@ -68,4 +68,4 @@ At lines 371 - 377, the values of additional data published in Chatzipapas et al
 
 [2] A quantitative model of the major pathways for radiation-induced DNA double-strand break repair, Belov OV, et al. J Theor Biol., Feb 7;366:115-30, 2015 : [link]({{ "https://doi.org/10.1016/j.jtbi.2014.09.024" | relative_url }})
 
-[3] Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, Chatzipapas et al. Prec Rad Onc 2022 : [link]({{ "https://arxiv.org/abs/2210.01564" | relative_url }})
+[3] Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, Chatzipapas et al. Prec Radiat Oncol. 1–11. 2023 : [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }})
