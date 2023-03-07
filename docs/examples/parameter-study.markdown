@@ -29,7 +29,7 @@ The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000
 /dnageom/checkOverlaps false
 
 /dnageom/radicalKillDistance 9 nm
-/dnageom/interactionDirectRange 7 angstrom
+/dnageom/interactionDirectRange 6.5 angstrom
 
 /dnageom/placementSize 30 30 100 nm
 /dnageom/fractalScaling 1 1 1 nm
