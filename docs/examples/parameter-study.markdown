@@ -53,7 +53,7 @@ Primary electrons are generated randomly, with a random direction in a smaller 5
 /gps/pos/shape Sphere
 /gps/pos/radius 500 nm
 /gps/pos/centre 0 0 0 nm
-/run/beamOn 1000000
+/run/beamOn 100000
 ```
 ## Damage model
 Direct damage model uses the 17.5 eV for lower and upper break thresholds. 
