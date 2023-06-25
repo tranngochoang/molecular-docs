@@ -7,6 +7,8 @@ nav_order: 5
 # Publications
 This beta version of molecularDNA is based on the following previous works and is currently being further developed.
 
+- Geant4-DNA simulation of human cancer cells irradiation with helium ion beams, Chatzipapas et al., Phys. Med. 112 (2023) 102613 : [link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }})
+
 - Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, Chatzipapas et al., Prec. Radiat. Oncol. (2023) 1–11 : [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }})
 
 - A Geant4-DNA evaluation of radiation-induced DNA damage on a human fibroblast, W.-G. Shin et al., Cancers 13 (2021) 4940 : [link]({{ "https://www.mdpi.com/2072-6694/13/19/4940" | relative_url }})
