@@ -21,7 +21,7 @@ The number of non-repairable DSB/Gy/cell is needed (NcDSB), as well as the numbe
 
 
 Where: 
-- N0 is the total numbe of DSB (NncDSB + NcDSB). 
+- N0 is the total number of DSB (NncDSB + NcDSB). 
 - VNHEJ, VHR, VSSA and VmicroSSA are mathematical variables that characterize the way that each model affects 
 the way that DSBs are repaired. 
 - D is the dose (Gy). 
