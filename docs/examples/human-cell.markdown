@@ -14,7 +14,8 @@ parent: Available geometries
 {:toc}
 
 ## Overview
-DNA damage induced in a simplified human fibroblast cell can be simulated using the provided macro files. A large amount of memory and computer performance will be required for this example.
+DNA damage induced in a simplified human fibroblast cell can be simulated using the provided macro files. A large amount of memory and computer performance will be required for this example. The parameters used in the macro human_cell.mac and shown in this page are further described in Phys. Med. 112 (2023) 102613 ([link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }}))
+
 ## Geometry
 This geometry consists of a continuous chain defined by taking a basic Hilbert curve. This fractal is broken into cubic regions of straight and turned chromatin sections [DNA placement]({{"/docs/geometry-library/dna-placements" | relative_url}}). This chain is included in an ellipsoid with semi-dimensions 7.1x2.5x7.1 μm, which imitates a cell nucleus. Only cubes that are completely included in the ellipsoid are considered as parts of the chain, which length is 6.4 Gbp. Bp density of the produced cell corresponds to ~0.015 bp/nm3.
 ```
