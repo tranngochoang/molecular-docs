@@ -17,3 +17,4 @@ the geometry, damage model, physics, chemistry and run conditions for the
 simulation until principal DSB repair pathways.
 
 If you are entirely new to this, the best place to start is looking at the [molecularDNA macro files]( {{ "/docs/overview/macro-anatomy" | relative_url }} ).
+The parameters used in the macro human_cell.mac and shown in this page are further described in Phys. Med. 112 (2023) 102613 [link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }})
