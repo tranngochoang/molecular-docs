@@ -68,15 +68,15 @@ Direct damage model sets 5 eV for the lower break threshold and 37.5 eV for the 
 
 /dnadamage/indirectOHBaseChance 1.0
 /dnadamage/indirectOHStrandChance 0.405
-/dnadamage/inductionOHChance 0.00
+/dnadamage/inductionOHChance 0.0
 
 /dnadamage/indirectHBaseChance 1.0
 /dnadamage/indirectHStrandChance 0.0
-/dnadamage/inductionHChance 0.00
+/dnadamage/inductionHChance 0.0
 
 /dnadamage/indirectEaqBaseChance 1.0
 /dnadamage/indirectEaqStrandChance 0.0
-/dnadamage/inductionEaqChance 0.00
+/dnadamage/inductionEaqChance 0.0
 ```
 ## Results
 Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using human_cell.C macro file. 
